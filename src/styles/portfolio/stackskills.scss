@@ -12,19 +12,45 @@
     border-bottom: 4px solid #CEA37E;
 }
 
-.skills-container {
-    width: 100%;
+.stackSkills-container {
     display: flex;
-    justify-content: space-around;
     flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
 }
 
-
-li {
+.skills-container {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+}
+
+.skills-list {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 20px;
+}
+
+.skills-list li {
     border: 2px solid #CEA37E;
     border-radius: 20px;
     padding: 10px;
+}
+
+.stack-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stack-logo {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.stack-logo img {
+    width: 70px;
 }

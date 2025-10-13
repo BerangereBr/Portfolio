@@ -10,16 +10,18 @@ function StackSkills() {
 
         <section id='stackSkills'>
             <h1 className='stackSkills-title'>Compétences</h1>
-            <div className='skills-container'>
-                <h2 className='skills-title'>Soft skills</h2>
-                <ul>
-                    <li>Esprit d'équipe</li>
-                    <li>Empathie</li>
-                    <li>Adaptabilité</li>
-                    <li>Patience</li>
-                    <li>Organisation</li>
-                </ul>
-                <div className="container-stack">
+            <div className='stackSkills-container'>
+                <div className='skills-container'>
+                    <h2 className='skills-title'>Soft skills</h2>
+                    <ul className='skills-list'>
+                        <li>Esprit d'équipe</li>
+                        <li>Empathie</li>
+                        <li>Adaptabilité</li>
+                        <li>Patience</li>
+                        <li>Organisation</li>
+                    </ul>
+                </div>
+                <div className="stack-container">
                     <h2 className='stack-title'>Stack technique</h2>
                     <div className='stack-logo'>
                         <img src={html5} alt='logo html5' />

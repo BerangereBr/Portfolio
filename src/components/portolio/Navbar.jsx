@@ -15,9 +15,9 @@ function Navbar() {
             <div className='navbar'>
                 <ul className='liste-nav'>
                     <li onClick={() => scrollSection('accueil')}>Accueil</li>
-                    <li onClick={() => scrollSection('presentation')}>Présentation</li>
-                    <li onClick={() => scrollSection('competences')}>Compétences</li>
-                    <li onClick={() => scrollSection('projets')}>Projets</li>
+                    <li onClick={() => scrollSection('about')}>Présentation</li>
+                    <li onClick={() => scrollSection('stackSkills')}>Compétences</li>
+                    <li onClick={() => scrollSection('projects')}>Projets</li>
                 </ul>
             </div>
         </div >

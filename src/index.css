@@ -3,3 +3,7 @@ body {
   padding: 0;
   width: 100vw;
 }
+
+:root {
+  font-family: 'Poppins';
+}

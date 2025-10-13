@@ -3,27 +3,27 @@
         "Titre": "Site vitrine pour une architecte – JavaScript",
         "Contexte": "Dans le cadre de ma formation de développeur web, j’ai développé le site vitrine de Sophie Bluel, une architecte d’intérieur, à partir d’une maquette figma. Ce projet avait pour but d’ajouter de l’interactivité via JavaScript tout en respectant une architecture de code claire.",
         "Objectif": "L’enjeu était de rendre le site dynamique : filtrer les projets par catégorie, gérer l’affichage des éléments via le DOM, et créer une modale d’upload sécurisée pour les administrateurs connectés. Une attention particulière a été portée à la clarté du code et à la gestion des événements.",
-        "Stack technique": "HTML5, CSS3, JavaScript vanilla (DOM, événements, appels API), Fetch API, gestion des erreurs côté client.",
-        "Compétences développées": "J’ai renforcé mes compétences en manipulation du DOM, en gestion d’événements, et en appels asynchrones via Fetch. J’ai aussi appris à structurer mon code JS pour qu’il soit modulaire, maintenable et compréhensible.",
-        "Résultats et impact": "Le site est interactif, entièrement fonctionnel et conforme aux exigences de la maquette. L’interface d’administration permet d’ajouter ou supprimer des projets via une API, avec des retours visuels clairs pour l’utilisateur.",
-        "Perspectives d’amélioration": "Une refactorisation en composants JavaScript ou l’intégration d’un framework léger (comme Vue.js) pourrait améliorer la scalabilité. Des tests unitaires pourraient aussi être ajoutés pour renforcer la robustesse du code."
+        "StackTechnique": "HTML5, CSS3, JavaScript vanilla (DOM, événements, appels API), Fetch API, gestion des erreurs côté client.",
+        "Competences": "J’ai renforcé mes compétences en manipulation du DOM, en gestion d’événements, et en appels asynchrones via Fetch. J’ai aussi appris à structurer mon code JS pour qu’il soit modulaire, maintenable et compréhensible.",
+        "Resultats": "Le site est interactif, entièrement fonctionnel et conforme aux exigences de la maquette. L’interface d’administration permet d’ajouter ou supprimer des projets via une API, avec des retours visuels clairs pour l’utilisateur.",
+        "Amelioration": "Une refactorisation en composants JavaScript ou l’intégration d’un framework léger (comme Vue.js) pourrait améliorer la scalabilité. Des tests unitaires pourraient aussi être ajoutés pour renforcer la robustesse du code."
     },
     {
         "Titre": "Application de location d’hébergements – React",
         "Contexte": "Ce projet a été réalisé dans le cadre de ma formation de développeur web. L’objectif était de recréer l’application Kasa, une plateforme de location de logements entre particuliers, à partir de maquettes Figma, tout en découvrant les bases de React.",
         "Objectif": "Créer une application front-end en React en respectant les bonnes pratiques de développement : découpage en composants, routage avec React Router, gestion des props, et accessibilité. Le site devait être responsive, fluide et conforme à la maquette.",
-        "Stack technique": "React, React Router, JavaScript ES6, HTML5, CSS3 (Flexbox, Media Queries), Git, Figma.",
-        "Compétences développées": "J’ai appris à structurer une application React en composants réutilisables, à implémenter une navigation dynamique avec React Router, et à manipuler des données JSON pour alimenter dynamiquement l’interface. Le travail sur la responsivité et l’accessibilité a également été renforcé.",
-        "Résultats et impact": "L’application est entièrement fonctionnelle, responsive, et conforme à la maquette. L’expérience utilisateur est fluide, et le code est propre, structuré et facile à maintenir. Le projet a permis de consolider mes bases en développement front-end avec React.",
-        "Perspectives d’amélioration": ">Intégrer un système de gestion d’état (comme Redux ou Context API) serait pertinent pour des projets plus complexes. Des tests unitaires avec Jest pourraient également être ajoutés pour renforcer la fiabilité de l’application."
+        "StackTechnique": "React, React Router, JavaScript ES6, HTML5, CSS3 (Flexbox, Media Queries), Git, Figma.",
+        "Competences": "J’ai appris à structurer une application React en composants réutilisables, à implémenter une navigation dynamique avec React Router, et à manipuler des données JSON pour alimenter dynamiquement l’interface. Le travail sur la responsivité et l’accessibilité a également été renforcé.",
+        "Resultats": "L’application est entièrement fonctionnelle, responsive, et conforme à la maquette. L’expérience utilisateur est fluide, et le code est propre, structuré et facile à maintenir. Le projet a permis de consolider mes bases en développement front-end avec React.",
+        "Amelioration": "Intégrer un système de gestion d’état (comme Redux ou Context API) serait pertinent pour des projets plus complexes. Des tests unitaires avec Jest pourraient également être ajoutés pour renforcer la fiabilité de l’application."
     },
     {
         "Titre": "Backend d’une bibliothèque de livres – Node.js & Express",
         "Contexte": "Ce projet a été réalisé dans le cadre de mon apprentissage du développement back-end. Il s’agissait de créer une API sécurisée pour un site de notation de livres, Mon Vieux Grimoire, en utilisant Node.js et une base de données MongoDB.",
         "Objectif": "Développer une API REST permettant la création, la modification, la suppression et la notation de livres par les utilisateurs. L’enjeu était aussi d'assurer la sécurité des données, la protection des accès et la bonne gestion des fichiers images.",
-        "Stack technique": "Node.js, Express, MongoDB, Mongoose, dotenv (gestion des variables d’environnement), Helmet (sécurité des en-têtes HTTP), Multer (upload d’images), Git.",
-        "Compétences développées": "J’ai appris à concevoir une architecture API REST complète, à sécuriser les routes et les données utilisateurs, à gérer l’authentification via tokens, et à manipuler des fichiers avec Multer. Le projet m’a également initié aux bonnes pratiques de sécurité web.",
-        "Résultats et impact": "L’API est pleinement fonctionnelle, respecte les spécifications du cahier des charges et passe les tests de validation. Les données sont sécurisées, les requêtes optimisées et la gestion des erreurs est proprement implémentée.",
-        "Perspectives d’amélioration": "La mise en place de tests automatisés (Jest, Supertest) et d’un système de logging plus complet améliorerait la maintenabilité. Une future version pourrait inclure une pagination des résultats et une gestion avancée des rôles utilisateurs."
+        "StackTechnique": "Node.js, Express, MongoDB, Mongoose, dotenv (gestion des variables d’environnement), Helmet (sécurité des en-têtes HTTP), Multer (upload d’images), Git.",
+        "Competences": "J’ai appris à concevoir une architecture API REST complète, à sécuriser les routes et les données utilisateurs, à gérer l’authentification via tokens, et à manipuler des fichiers avec Multer. Le projet m’a également initié aux bonnes pratiques de sécurité web.",
+        "Resultats": "L’API est pleinement fonctionnelle, respecte les spécifications du cahier des charges et passe les tests de validation. Les données sont sécurisées, les requêtes optimisées et la gestion des erreurs est proprement implémentée.",
+        "Amelioration": "La mise en place de tests automatisés (Jest, Supertest) et d’un système de logging plus complet améliorerait la maintenabilité. Une future version pourrait inclure une pagination des résultats et une gestion avancée des rôles utilisateurs."
     }
 ]
