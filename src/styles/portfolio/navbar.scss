@@ -1,0 +1,32 @@
+.container-navbar {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: 1;
+    background: #F6EEE7;
+    box-shadow: 0 3px 8px 3px rgb(204, 204, 204);
+    z-index: 2;
+
+    .navbar {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        color: var(--text-color);
+        margin-right: 50px;
+
+        .liste-nav {
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+
+            .liste-nav li {
+                cursor: pointer;
+            }
+
+            .liste-nav li:hover {
+                color: #815E46;
+            }
+        }
+    }
+}

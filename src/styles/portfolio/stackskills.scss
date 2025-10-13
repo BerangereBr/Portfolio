@@ -1,0 +1,30 @@
+#stackSkills {
+    margin-top: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #F6EEE7;
+}
+
+.stackSkills-title {
+    padding-bottom: 10px;
+    border-bottom: 4px solid #CEA37E;
+}
+
+.skills-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+
+li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #CEA37E;
+    border-radius: 20px;
+    padding: 10px;
+}
