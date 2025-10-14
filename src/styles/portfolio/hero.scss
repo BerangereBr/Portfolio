@@ -10,10 +10,11 @@
     .accueil_text {
         display: flex;
         flex-direction: column;
-        font-size: 70px;
+        font-size: 6vw;
         margin-left: 20px;
         z-index: 1;
         color: #3E332E;
+        width: 80%;
     }
 
     .accueil_name {

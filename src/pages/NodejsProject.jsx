@@ -1,21 +1,25 @@
 import PageProject from '../components/PageProject'
 import data from '../projects.json'
-import librairie from '../assets/images/librairie.png'
-import nodejs from '../assets/logo/nodejs.png'
-import mongoDB from '../assets/logo/mongoDB.png'
-import expressjs from '../assets/logo/expressjs.png'
+import bannerNodejs from '../assets/images/projectNodejs/bannerNodejs.webp'
+import { DiNodejs } from "react-icons/di";
+import { TbBrandMongodb } from "react-icons/tb";
+import accueilNodejs from '../assets/images/projectNodejs/accueilNodejs.webp'
+import bookNodejs from '../assets/images/projectNodejs/bookNodejs.webp'
+import formNodejs from '../assets/images/projectNodejs/formNodejs.webp'
 
 function NodejsPage() {
     const project = data[2]
     return (
         <PageProject
             title={project.Titre}
-            image={librairie}
+            banner={bannerNodejs}
             objectif={project.Objectif}
-            logo={[nodejs, expressjs, mongoDB]}
+            logo={[DiNodejs, TbBrandMongodb]}
             competence={project.Competences}
             resultat={project.Resultats}
-            amelioration={project.Amelioration} />
+            amelioration={project.Amelioration}
+            images={[accueilNodejs, bookNodejs, formNodejs]}
+        />
     )
 }
 

@@ -14,11 +14,21 @@
         color: var(--text-color);
         margin-right: 50px;
 
+        @media (max-width:680px) {
+            justify-content: center;
+        }
+
         .liste-nav {
             list-style: none;
+            flex-wrap: wrap;
             display: flex;
             flex-direction: row;
             gap: 20px;
+
+            @media (max-width:480px) {
+                gap: 10px;
+                font-size: 12px;
+            }
         }
     }
 }

@@ -6,7 +6,7 @@
         "StackTechnique": "HTML5, CSS3, JavaScript vanilla (DOM, événements, appels API), Fetch API, gestion des erreurs côté client.",
         "Competences": "J’ai renforcé mes compétences en manipulation du DOM, en gestion d’événements, et en appels asynchrones via Fetch. J’ai aussi appris à structurer mon code JS pour qu’il soit modulaire, maintenable et compréhensible.",
         "Resultats": "Le site est interactif, entièrement fonctionnel et conforme aux exigences de la maquette. L’interface d’administration permet d’ajouter ou supprimer des projets via une API, avec des retours visuels clairs pour l’utilisateur.",
-        "Amelioration": "Une refactorisation en composants JavaScript ou l’intégration d’un framework léger (comme Vue.js) pourrait améliorer la scalabilité. Des tests unitaires pourraient aussi être ajoutés pour renforcer la robustesse du code."
+        "Amelioration": "Une refactorisation en composants JavaScript ou l’intégration d’un framework léger pourrait améliorer la scalabilité."
     },
     {
         "Titre": "Application de location d’hébergements – React",
@@ -15,7 +15,7 @@
         "StackTechnique": "React, React Router, JavaScript ES6, HTML5, CSS3 (Flexbox, Media Queries), Git, Figma.",
         "Competences": "J’ai appris à structurer une application React en composants réutilisables, à implémenter une navigation dynamique avec React Router, et à manipuler des données JSON pour alimenter dynamiquement l’interface. Le travail sur la responsivité et l’accessibilité a également été renforcé.",
         "Resultats": "L’application est entièrement fonctionnelle, responsive, et conforme à la maquette. L’expérience utilisateur est fluide, et le code est propre, structuré et facile à maintenir. Le projet a permis de consolider mes bases en développement front-end avec React.",
-        "Amelioration": "Intégrer un système de gestion d’état (comme Redux ou Context API) serait pertinent pour des projets plus complexes. Des tests unitaires avec Jest pourraient également être ajoutés pour renforcer la fiabilité de l’application."
+        "Amelioration": "Intégrer un système de gestion d’état (comme Redux ou Context API) serait pertinent pour des projets plus complexes."
     },
     {
         "Titre": "Backend d’une bibliothèque de livres – Node.js & Express",
@@ -24,6 +24,6 @@
         "StackTechnique": "Node.js, Express, MongoDB, Mongoose, dotenv (gestion des variables d’environnement), Helmet (sécurité des en-têtes HTTP), Multer (upload d’images), Git.",
         "Competences": "J’ai appris à concevoir une architecture API REST complète, à sécuriser les routes et les données utilisateurs, à gérer l’authentification via tokens, et à manipuler des fichiers avec Multer. Le projet m’a également initié aux bonnes pratiques de sécurité web.",
         "Resultats": "L’API est pleinement fonctionnelle, respecte les spécifications du cahier des charges et passe les tests de validation. Les données sont sécurisées, les requêtes optimisées et la gestion des erreurs est proprement implémentée.",
-        "Amelioration": "La mise en place de tests automatisés (Jest, Supertest) et d’un système de logging plus complet améliorerait la maintenabilité. Une future version pourrait inclure une pagination des résultats et une gestion avancée des rôles utilisateurs."
+        "Amelioration": "La mise en place de tests automatisés (Jest, Supertest). Une future version pourrait inclure une pagination des résultats et une gestion avancée des rôles utilisateurs."
     }
 ]

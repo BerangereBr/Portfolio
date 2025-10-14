@@ -3,6 +3,7 @@ import Hero from '../components/portolio/Hero'
 import Navbar from '../components/portolio/Navbar'
 import StackSkills from '../components/portolio/StackSkills'
 import Projects from '../components/portolio/Projects'
+import Footer from '../components/portolio/Footer'
 
 function Portfolio() {
     return (
@@ -12,6 +13,7 @@ function Portfolio() {
             <About />
             <StackSkills />
             <Projects />
+            <Footer />
         </>
     )
 }

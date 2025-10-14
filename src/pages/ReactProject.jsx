@@ -1,21 +1,26 @@
 import PageProject from '../components/PageProject'
 import data from '../projects.json'
-import kasa from '../assets/images/kasa.png'
-import html from '../assets/logo/html5.png'
-import sass from '../assets/logo/sass.png'
-import react from '../assets/logo/react.png'
+import bannerReact from '../assets/images/projectReact/bannerReact.webp'
+import { FaReact } from "react-icons/fa";
+import { AiOutlineHtml5 } from "react-icons/ai";
+import infoReact from '../assets/images/projectReact/infoReact.webp'
+import logementReact from '../assets/images/projectReact/logementReact.webp'
+import accueilReact from '../assets/images/projectReact/accueilReact.webp'
+
 
 function ReactPage() {
     const project = data[1]
     return (
         <PageProject
             title={project.Titre}
-            image={kasa}
+            banner={bannerReact}
             objectif={project.Objectif}
-            logo={[react, html, sass]}
+            logo={[FaReact, AiOutlineHtml5]}
             competence={project.Competences}
             resultat={project.Resultats}
-            amelioration={project.Amelioration} />
+            amelioration={project.Amelioration}
+            images={[accueilReact, logementReact, infoReact]}
+        />
     )
 }
 
