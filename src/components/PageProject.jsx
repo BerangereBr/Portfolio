@@ -1,58 +1,44 @@
 import '../styles/projects/project.scss'
 import { Link } from 'react-router-dom'
-import { FaArrowLeft } from "react-icons/fa";
+import fleche from '../assets/logo/fleche.png'
 
-function PageProject({ title, objectif, competence, resultat, amelioration, logo, banner, images }) {
+function PageProject({ title, objectif, competence, resultat, amelioration, banner }) {
 
     return (
         <>
-            <div className='header-project'>
+            <header className='project-header'>
                 <div className='arrow-div'>
-                    <Link to='/'><FaArrowLeft className='arrow' /></Link>
+                    <Link to='/'><img src={fleche} alt='fleche retour' className='arrow' /></Link>
                 </div>
-                <div className='banner'>
-                    <img src={banner} alt='site' className='picture'></img>
-                </div>
-                <h1 className='header_project-title'>{title}</h1>
-            </div>
-            <div>
-                {logo && logo.length > 0 && (
-                    <div className="project-images">
-                        {logo.map((Icon, index) => (
-                            <Icon
-                                key={`${Icon}-${index}`}
-                                alt={`screenshot-${index + 1}`}
-                                className="project-logo"
-                            />
-                        ))}
+                <div className='project-banner'>
+                    <div className='project-banner-div'>
+                        <img src={banner} alt={`projet ${title}`} className='banner-picture' fetchPriority="high" width='1440px' height='760px'></img>
                     </div>
-                )}
-            </div>
-            <div className='details-container'>
-                <div>
-                    <h2>Objectif</h2>
-                    <p>{objectif}</p>
                 </div>
-                <div>
-                    <h2>Compétence</h2>
-                    <p>{competence}</p>
+                <div className='project-header-title'>
+                    <h1>{title}</h1>
                 </div>
-                <div>
-                    <h2>Résultats</h2>
-                    <p>{resultat}</p>
+            </header >
+            <main className='project-main'>
+                <div className='details-container'>
+                    <div>
+                        <h2>Objectif</h2>
+                        <p>{objectif}</p>
+                    </div>
+                    <div>
+                        <h2>Compétence</h2>
+                        <p>{competence}</p>
+                    </div>
+                    <div>
+                        <h2>Résultats</h2>
+                        <p>{resultat}</p>
+                    </div>
+                    <div>
+                        <h2>Perspéctive d'amélioration</h2>
+                        <p>{amelioration}</p>
+                    </div>
                 </div>
-                <div>
-                    <h2>Perspéctive d'amélioration</h2>
-                    <p>{amelioration}</p>
-                </div>
-            </div>
-            <div>
-                {images && images.length > 0 && (
-                    <div className='project_images-div'>{images.map((imgSrc, index) => (
-                        <img src={imgSrc} key={`${imgSrc}-${index}`}></img>
-                    ))}</div>
-                )}
-            </div>
+            </main>
         </>
     )
 }

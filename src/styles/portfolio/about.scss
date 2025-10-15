@@ -1,3 +1,5 @@
+@import '../variables.scss';
+
 #about {
     width: 100%;
     margin-top: 100px;
@@ -6,13 +8,13 @@
     align-items: center;
 
     .about-title {
-        color: var(--title-color);
+        color: $text-primary;
         margin-left: 20px;
         display: flex;
         flex-direction: column;
         align-items: center;
         padding-bottom: 10px;
-        border-bottom: 4px solid #CEA37E;
+        border-bottom: 4px solid $border-color;
     }
 
     .about-paragraphe {
@@ -22,9 +24,19 @@
         border-radius: 20px;
 
         p {
-            text-align: justify;
             margin-left: 50px;
             margin-right: 50px;
+            font-size: 22px;
+            color: $text-secondary;
+
+            @media (max-width:1280px) {
+                font-size: 16px;
+            }
+
+            @media (max-width:500px) {
+                font-size: 14px;
+
+            }
         }
     }
 

@@ -1,0 +1,21 @@
+// 🎯 Couleurs principales
+$color-primary: #CEA37E; // Marron moyen (couleur dominante)
+$color-primary-light: #EBD8C2; // Marron foncé
+$color-primary-dark: #A67C52; // Marron clair (accent ou hover)
+
+// ⚪ Neutres
+$color-white: #ffffff;
+$color-black: #000000;
+$color-light-bg: #F9F5F1; // Fond très clair
+$color-dark-bg: #1E1E1E; // Fond très sombre
+
+// 🖋 Texte
+$text-primary: $color-black;
+$text-secondary: #333333;
+$text-invert: $color-white;
+
+// 🪄 Éléments UI
+$border-color: $color-primary;
+$hover-color: $color-primary-light;
+$button-bg: $color-primary;
+$button-text: $color-white;

@@ -1,77 +1,91 @@
+@import '../variables.scss';
+
 #stackSkills {
     margin-top: 100px;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: #F6EEE7;
-}
+    font-size: 22px;
+    background: $color-primary-light;
+    padding-bottom: 50px;
 
-.stackSkills-title {
-    padding-bottom: 10px;
-    border-bottom: 4px solid #CEA37E;
-}
-
-.stackSkills-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
+    @media (max-width:1280px) {
+        font-size: 16px;
+    }
 
     @media (max-width:500px) {
-        flex-direction: column;
+        font-size: 14px;
     }
-}
 
-.skills-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    height: 100%;
-}
-
-.skills-list {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    list-style: none;
-    gap: 10px;
-    padding: 0;
-
-    @media (max-width:1024px) {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+    .stackSkills-title {
+        padding-bottom: 10px;
+        border-bottom: 4px solid $color-primary;
     }
-}
 
-.skills-list li {
-    display: flex;
-    justify-content: center;
-    border: 2px solid #CEA37E;
-    border-radius: 20px;
-    padding: 10px;
-}
+    .stackSkills-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
 
-.stack-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-}
+        @media (max-width:500px) {
+            flex-direction: column;
+        }
 
-.stack-logo {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+        .skills-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            height: 100%;
 
-    @media (max-width:1024px) {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+            .skills-list {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                list-style: none;
+                gap: 10px;
+                padding: 0;
+
+                @media (max-width:1024px) {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                }
+
+                li {
+                    display: flex;
+                    justify-content: center;
+                    border: 2px solid $color-primary;
+                    border-radius: 20px;
+                    padding: 10px;
+                    color: $text-secondary;
+                }
+            }
+        }
+
+        .stack-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+
+            .stack-logo {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 20px;
+
+                @media (max-width:1024px) {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                }
+
+                img {
+                    width: 80px;
+                }
+            }
+        }
     }
-}
 
-.stack-logo img {
-    width: 70px;
 }

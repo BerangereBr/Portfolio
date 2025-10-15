@@ -1,0 +1,30 @@
+@import './variables.scss';
+
+#error {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    h1 {
+        font-size: 250px;
+        font-weight: 800;
+        margin: 0;
+        color: $color-primary;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    a {
+        text-decoration: none;
+        cursor: pointer;
+
+        p {
+            text-decoration: underline;
+            color: $text-secondary;
+        }
+    }
+}
