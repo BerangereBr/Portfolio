@@ -1,6 +1,10 @@
+import { useState } from 'react';
 import '../../styles/portfolio/navbar.scss'
+import menu from '../../assets/logo/menu.png'
+import close from '../../assets/logo/close.png'
 
 function Navbar() {
+    const [open, setOpen] = useState(false)
 
     const scrollSection = (id) => {
         const element = document.getElementById(id);
@@ -8,21 +12,41 @@ function Navbar() {
         if (element) {
             const y = element.getBoundingClientRect().top + window.pageYOffset - navbar.offsetHeight
             window.scrollTo({ top: y, behavior: 'smooth' })
+            setOpen(true)
         }
     }
+
     return (
-        <div className='container-navbar'>
-            <div className='navbar'>
-                <ul className='liste-nav'>
-                    <li onClick={() => scrollSection('accueil')}>Accueil</li>
-                    <li onClick={() => scrollSection('about')}>Présentation</li>
-                    <li onClick={() => scrollSection('stackSkills')}>Compétences</li>
-                    <li onClick={() => scrollSection('projects')}>Projets</li>
-                    <li onClick={() => scrollSection('formation')}>Parcours</li>
-                    <li onClick={() => scrollSection('form')}>Contact</li>
-                </ul>
+        <>
+            <div className='container-navbar'>
+                <div className='navbar'>
+                    <ul className='liste-nav'>
+                        <li onClick={() => scrollSection('accueil')}>Accueil</li>
+                        <li onClick={() => scrollSection('about')}>Présentation</li>
+                        <li onClick={() => scrollSection('stackSkills')}>Compétences</li>
+                        <li onClick={() => scrollSection('projects')}>Projets</li>
+                        <li onClick={() => scrollSection('formation')}>Parcours</li>
+                        <li onClick={() => scrollSection('form')}>Contact</li>
+                    </ul>
+                </div>
+            </div >
+            <div className='navbar-phone'>
+                <div className='navbar-phone-button'>
+                    <button onClick={() => setOpen(!open)}>
+                        {open ? <img src={close} alt='menu'></img> : <img src={menu} alt='menu'></img>}
+                    </button>
+                </div>
+                {open &&
+                    <ul className='liste-nav-phone'>
+                        <li onClick={() => scrollSection('accueil')}>Accueil</li>
+                        <li onClick={() => scrollSection('about')}>Présentation</li>
+                        <li onClick={() => scrollSection('stackSkills')}>Compétences</li>
+                        <li onClick={() => scrollSection('projects')}>Projets</li>
+                        <li onClick={() => scrollSection('formation')}>Parcours</li>
+                        <li onClick={() => scrollSection('form')}>Contact</li>
+                    </ul>}
             </div>
-        </div >
+        </>
     )
 }
 export default Navbar

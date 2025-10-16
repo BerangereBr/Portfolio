@@ -5,12 +5,15 @@
     top: 0;
     width: 100vw;
     z-index: 1;
-    background: variables.$color-primary-light;
-    z-index: 2;
+    background: variables.$color-primary;
+
+    @media (max-width:768px) {
+        visibility: hidden;
+    }
 
     .navbar {
         display: flex;
-        justify-content: end;
+        justify-content: flex-end;
         align-items: center;
         color: variables.$text-primary;
         margin-right: 50px;
@@ -36,9 +39,9 @@
 
             li {
                 cursor: pointer;
-                font-size: variables.$font-size-desk;
+                font-size: variables.$font-size-h2-desk;
 
-                @media (max-width:768px) {
+                @media (max-width:860px) {
                     font-size: variables.$font-size-tablette;
                 }
 
@@ -49,8 +52,43 @@
             }
 
             li:hover {
-                color: variables.$color-primary;
+                color: variables.$color-primary-light;
             }
         }
+    }
+}
+
+.navbar-phone {
+    display: none;
+
+    @media (max-width:768px) {
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        z-index: 1;
+        padding: 20px;
+
+        .navbar-phone-button {
+            display: flex;
+            align-items: flex-start;
+
+            button {
+                background: none;
+                border: none;
+                cursor: pointer;
+
+                img {
+                    width: 30px;
+                }
+            }
+        }
+    }
+
+    .liste-nav-phone {
+        list-style: none;
+        line-height: 25px;
+        margin: 0;
+        padding-left: 10px;
+        font-size: variables.$font-size-h2-phone;
     }
 }

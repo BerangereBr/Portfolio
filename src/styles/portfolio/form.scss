@@ -20,6 +20,7 @@
     h1 {
         border-bottom: 4px solid variables.$border-color;
         font-size: variables.$font-size-title-desk;
+        font-weight: bold;
 
         @media (max-width:768px) {
             font-size: variables.$font-size-title-tablette;

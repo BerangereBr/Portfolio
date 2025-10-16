@@ -5,7 +5,7 @@ function About() {
         <section id='about' className='about'>
             <h1 className="about-title">À propos</h1>
             <div className='about-paragraphe'>
-                <p>Mon intérête pour le développement web a commancé avant ma formation, lorsque j'ai créé un site autour d'un jeu video.
+                <p>Mon intéret pour le développement web a commmencé avant ma formation, lorsque j'ai créé un site autour d'un jeu video.
                     Cette première expérience m'a permis de découvrir les bases du code.
                 </p>
                 <p>Pour acquérir des compétences solides, j'ai suivi une formation de Développeur Web chez OpenClassrooms. Elle m'a permis de maîtriser les langages du web,
