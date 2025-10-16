@@ -1,32 +1,21 @@
-@import '../variables.scss';
+@use '../variables';
 
 .container-navbar {
     position: fixed;
     top: 0;
     width: 100vw;
     z-index: 1;
-    background: $color-primary-light;
+    background: variables.$color-primary-light;
     z-index: 2;
-    font-size: 20px;
-
-    @media (max-width:1280px) {
-        font-size: 16px;
-
-    }
-
-    @media (max-width:500px) {
-        font-size: 14px;
-    }
-
 
     .navbar {
         display: flex;
         justify-content: end;
         align-items: center;
-        color: $text-primary;
+        color: variables.$text-primary;
         margin-right: 50px;
 
-        @media (max-width:680px) {
+        @media (max-width:768px) {
             justify-content: center;
             margin: 0;
         }
@@ -40,17 +29,27 @@
             margin: 0;
             padding: 20px;
 
-            @media (max-width:520px) {
+            @media (max-width:768px) {
                 gap: 10px;
                 padding: 10px;
             }
 
             li {
                 cursor: pointer;
+                font-size: variables.$font-size-desk;
+
+                @media (max-width:768px) {
+                    font-size: variables.$font-size-tablette;
+                }
+
+                @media (max-width:480px) {
+                    font-size: variables.$font-size-phone;
+
+                }
             }
 
             li:hover {
-                color: $color-primary;
+                color: variables.$color-primary;
             }
         }
     }

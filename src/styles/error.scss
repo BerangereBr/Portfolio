@@ -1,4 +1,4 @@
-@import './variables.scss';
+@use './variables';
 
 #error {
     display: flex;
@@ -11,11 +11,29 @@
         font-size: 250px;
         font-weight: 800;
         margin: 0;
-        color: $color-primary;
+        color: variables.$color-primary;
+
+        @media (max-width:768px) {
+            font-size: 200px;
+        }
+
+        @media (max-width:480px) {
+            font-size: 150px;
+
+        }
     }
 
     p {
-        font-size: 20px;
+        font-size: variables.$font-size-title-desk;
+
+        @media (max-width:768px) {
+            font-size: variables.$font-size-title-tablette;
+        }
+
+        @media (max-width:480px) {
+            font-size: variables.$font-size-title-phone;
+
+        }
     }
 
     a {
@@ -24,7 +42,17 @@
 
         p {
             text-decoration: underline;
-            color: $text-secondary;
+            color: variables.$text-secondary;
+            font-size: variables.$font-size-title-desk;
+
+            @media (max-width:768px) {
+                font-size: variables.$font-size-title-tablette;
+            }
+
+            @media (max-width:480px) {
+                font-size: variables.$font-size-title-phone;
+
+            }
         }
     }
 }

@@ -5,6 +5,7 @@ import StackSkills from '../components/portolio/StackSkills'
 import Projects from '../components/portolio/Projects'
 import Footer from '../components/Footer'
 import Formation from '../components/portolio/Formation'
+import Form from '../components/portolio/Form'
 
 function Portfolio() {
     return (
@@ -18,6 +19,7 @@ function Portfolio() {
                 <StackSkills />
                 <Projects />
                 <Formation />
+                <Form />
             </main>
             <footer>
                 <Footer />

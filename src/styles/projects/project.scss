@@ -1,4 +1,4 @@
-@import '../variables.scss';
+@use '../variables';
 
 .project-header {
     width: 100%;
@@ -6,7 +6,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: $color-primary-light;
+    background-color: variables.$color-primary-light;
 
     .arrow-div {
         width: 100%;
@@ -18,6 +18,8 @@
 
             @media (max-width:750px) {
                 width: 30px;
+                padding: 10px;
+
             }
         }
     }
@@ -43,20 +45,18 @@
         justify-content: center;
         align-items: center;
         width: 100%;
+        text-align: center;
 
         h1 {
-            font-size: 35px;
+            font-size: variables.$font-size-title-desk;
 
-            @media (max-width:1000px) {
-                font-size: 25px;
+            @media (max-width:768px) {
+                font-size: variables.$font-size-title-tablette;
             }
 
-            @media (max-width:750px) {
-                font-size: 20px;
-            }
+            @media (max-width:480px) {
+                font-size: variables.$font-size-title-phone;
 
-            @media (max-width:500px) {
-                font-size: 16px;
             }
         }
     }
@@ -67,29 +67,56 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    max-width: 100%;
     min-height: 500px;
 
-    div {
+    .details-container {
         display: grid;
         grid-template-columns: 1fr 1fr;
         align-items: center;
         padding: 0 20px;
+
+        @media (max-width:760px) {
+            display: flex;
+            flex-direction: column;
+        }
 
         div {
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            padding: 20px;
+
+            @media (max-width:760px) {
+                padding: 10px;
+            }
         }
 
         h2 {
-            border-bottom: 4px solid $color-primary;
-            font-size: 22px;
+            border-bottom: 4px solid variables.$color-primary;
+            font-size: variables.$font-size-h2-desk;
+
+            @media (max-width:768px) {
+                font-size: variables.$font-size-h2-tablette;
+            }
+
+            @media (max-width:480px) {
+                font-size: variables.$font-size-h2-phone;
+
+            }
         }
 
         p {
-            font-size: 20px;
+            font-size: variables.$font-size-desk;
+
+            @media (max-width:768px) {
+                font-size: variables.$font-size-tablette;
+            }
+
+            @media (max-width:480px) {
+                font-size: variables.$font-size-phone;
+            }
         }
     }
 }
