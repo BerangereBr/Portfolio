@@ -7,13 +7,12 @@
     align-items: center;
     height: 100vh;
     width: 100%;
-    background: linear-gradient(70deg, variables.$text-invert, variables.$color-primary-light, variables.$color-primary, variables.$color-primary-dark);
 
     .accueil_text {
         display: flex;
         flex-direction: column;
         font-size: 5vw;
-        color: variables.$text-primary;
+        color: black;
         width: 80%;
         margin: 0;
     }
@@ -28,13 +27,13 @@
         flex-direction: row;
         align-items: flex-start;
         width: 80%;
-        gap: 10px;
+        gap: 20px;
 
         a {
             cursor: pointer;
 
             .footer_logo {
-                width: 40px;
+                width: 50px;
 
                 @media (max-width:768px) {
                     width: 30px;

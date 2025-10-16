@@ -9,10 +9,29 @@
     gap: 20px;
     padding: 20px;
 
-    .footer_logo {
-        text-decoration: none;
-        width: 50px;
+    @media (max-width:1200px) {
         height: 50px;
+    }
+
+    @media (max-width:480px) {
+        height: 20px;
+    }
+
+    .footer_logo {
+        width: 70px;
+        height: 70px;
         cursor: pointer;
+
+        @media (max-width:768px) {
+            height: 40px;
+            width: 40px;
+            height: 40px;
+        }
+
+        @media (max-width:480px) {
+            height: 20px;
+            width: 30px;
+            height: 30px;
+        }
     }
 }

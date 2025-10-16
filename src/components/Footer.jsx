@@ -1,6 +1,6 @@
 import '../styles/footer.scss'
-import github from '../assets/logo/github.png'
-import linkedin from '../assets/logo/linkedin.png'
+import github from '../assets/logo/githubLight.png'
+import linkedin from '../assets/logo/linkedinLight.png'
 
 function Footer() {
     return (

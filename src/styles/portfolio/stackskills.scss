@@ -5,133 +5,129 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 22px;
-    background: variables.$color-primary-light;
-    padding: 80px 0;
+    padding-bottom: 80px;
+    gap: 80px;
 
     @media (max-width:768px) {
-        padding: 50px 0;
+        gap: 50px;
+        padding-bottom: 50px;
     }
 
     @media (max-width:480px) {
-        padding: 20px 0;
-
+        gap: 20px;
+        padding-bottom: 20px;
     }
 
-    .stackSkills-title {
-        padding-bottom: 10px;
-        border-bottom: 4px solid variables.$color-primary;
-        font-size: variables.$font-size-title-desk;
-        font-weight: bold;
-
-        @media (max-width:768px) {
-            font-size: variables.$font-size-title-tablette;
-        }
-
-        @media (max-width:480px) {
-            font-size: variables.$font-size-title-phone;
-
-        }
-    }
-
-    .stackSkills-container {
+    .skills-container {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: space-around;
         align-items: center;
-        width: 100%;
 
-        @media (max-width:500px) {
-            flex-direction: column;
-        }
-
-        .skills-container {
+        .skills-list {
             display: flex;
-            flex-direction: column;
-            justify-content: space-between;
+            flex-direction: row;
+            justify-content: center;
             align-items: center;
-            height: 100%;
+            list-style: none;
+            padding: 0;
+            text-align: center;
+            gap: 20px;
 
-            h2 {
-                font-size: variables.$font-size-h2-desk;
+            @media (max-width:1044px) {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                width: 100%;
 
-                @media (max-width:768px) {
-                    font-size: variables.$font-size-h2-tablette;
-                }
-
-                @media (max-width:480px) {
-                    font-size: variables.$font-size-h2-phone;
-
+                li:nth-child(5) {
+                    grid-column: 2/-1;
                 }
             }
 
-            .skills-list {
-                display: flex;
-                flex-wrap: wrap;
-                align-items: center;
-                list-style: none;
-                gap: 10px;
-                padding: 0;
+            @media (max-width:768px) {
+                grid-template-columns: 1fr 1fr;
 
-                @media (max-width:1024px) {
-                    display: grid;
-                    grid-template-columns: 1fr 1fr;
+                li:nth-child(5) {
+                    grid-column: 1/-1;
                 }
+            }
 
-                li {
-                    display: flex;
-                    justify-content: center;
-                    border: 2px solid variables.$color-primary;
-                    border-radius: 20px;
-                    padding: 10px;
-                    color: variables.$text-secondary;
+            @media (max-width:540px) {
+                grid-template-columns: 1fr;
+            }
+
+            li {
+                display: flex;
+                justify-content: center;
+                border: 2px solid variables.$color-primary-dark;
+                padding: 10px;
+                font-size: variables.$font-size-Desk;
+                color: variables.$color-primary-dark;
+                font-weight: 500;
+
+                @media (max-width:1200px) {
                     font-size: variables.$font-size-desk;
 
-                    @media (max-width:768px) {
-                        font-size: variables.$font-size-tablette;
-                    }
-
-                    @media (max-width:480px) {
-                        font-size: variables.$font-size-phone;
-                    }
                 }
-            }
-        }
-
-        .stack-container {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            align-items: center;
-
-            h2 {
-                font-size: variables.$font-size-h2-desk;
 
                 @media (max-width:768px) {
-                    font-size: variables.$font-size-h2-tablette;
+                    font-size: variables.$font-size-tablette;
                 }
 
                 @media (max-width:480px) {
-                    font-size: variables.$font-size-h2-phone;
-
-                }
-            }
-
-            .stack-logo {
-                display: flex;
-                flex-wrap: wrap;
-                gap: 20px;
-
-                @media (max-width:1024px) {
-                    display: grid;
-                    grid-template-columns: 1fr 1fr;
-                }
-
-                img {
-                    width: 80px;
+                    font-size: variables.$font-size-phone;
                 }
             }
         }
     }
 
+    .stack-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+
+        h2 {
+            font-size: variables.$font-size-title-desk;
+            padding-bottom: 10px;
+            border-bottom: 4px solid variables.$color-primary-dark;
+            margin-bottom: 50px;
+
+            @media (max-width:768px) {
+                font-size: variables.$font-size-title-tablette;
+                margin-bottom: 30px;
+
+            }
+
+            @media (max-width:480px) {
+                font-size: variables.$font-size-title-phone;
+
+            }
+        }
+
+        .stack-logo {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            width: 100%;
+
+            @media (max-width:768px) {
+                display: grid;
+                grid-template-columns: 100px 100px 100px;
+            }
+
+            img {
+                width: 100px;
+
+                @media (max-width:768px) {
+                    width: 80px;
+
+                }
+            }
+        }
+
+    }
 }

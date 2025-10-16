@@ -6,7 +6,6 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    background-color: variables.$color-primary-light;
     padding: 80px 0;
 
     @media (max-width:768px) {
@@ -18,79 +17,129 @@
 
     }
 
-    h1 {
-        border-bottom: 4px solid variables.$color-primary;
-        font-size: variables.$font-size-title-desk;
-        font-weight: bold;
+    .formation-container {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0px 7px 29px 0px variables.$color-primary-light;
 
-        @media (max-width:768px) {
-            font-size: variables.$font-size-title-tablette;
-        }
+        h1 {
+            border-bottom: 4px solid variables.$color-primary-dark;
+            font-size: variables.$font-size-title-Desk;
+            font-weight: bold;
+            margin-bottom: 50px;
 
-        @media (max-width:480px) {
-            font-size: variables.$font-size-title-phone;
+            @media (max-width:1200px) {
+                font-size: variables.$font-size-title-desk;
+                margin-bottom: 30px;
+            }
 
+            @media (max-width:768px) {
+                font-size: variables.$font-size-title-tablette;
+            }
+
+            @media (max-width:480px) {
+                font-size: variables.$font-size-title-phone;
+
+            }
         }
     }
-}
 
-.formation-list {
-    position: relative;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    width: 80%;
-    padding: 0;
-    list-style: none;
-}
+    .formation-list {
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 80%;
+        padding: 0;
+        list-style: none;
 
-.formation-list::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 50%;
-    width: 2px;
-    background-color: variables.$color-primary;
-    transform: translateX(-50%);
-}
-
-.formation-list-text {
-    padding: 5px;
-    color: variables.$text-secondary;
-
-    h2 {
-        margin: 0;
-        color: variables.$text-primary ;
-        font-size: variables.$font-size-h2-desk;
-
-        @media (max-width:768px) {
-            font-size: variables.$font-size-h2-tablette;
-        }
-
-        @media (max-width:480px) {
-            font-size: variables.$font-size-h2-phone;
-
+        @media (max-width:650px) {
+            grid-template-columns: 1fr;
         }
 
     }
 
-    p {
-        font-size: variables.$font-size-desk;
+    .formation-list::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 50%;
+        width: 2px;
+        background-color: variables.$color-primary-dark;
+        transform: translateX(-50%);
 
-        @media (max-width:768px) {
-            font-size: variables.$font-size-tablette;
-        }
-
-        @media (max-width:480px) {
-            font-size: variables.$font-size-phone;
-
+        @media (max-width:650px) {
+            display: none;
         }
     }
-}
 
-.formation-list-text-end {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    text-align: end;
+    .formation-list-text-none {
+        @media (max-width:650px) {
+            display: none;
+        }
+    }
+
+    .formation-list-text {
+        padding: 5px;
+
+        @media (max-width:650px) {
+            text-align: center;
+            border-bottom: 2px solid variables.$color-primary-dark;
+        }
+
+        h2 {
+            margin: 0;
+            font-size: variables.$font-size-h2-desk;
+
+            @media (max-width:768px) {
+                font-size: variables.$font-size-h2-tablette;
+            }
+
+            @media (max-width:480px) {
+                font-size: variables.$font-size-h2-phone;
+
+            }
+        }
+
+        p {
+            font-size: variables.$font-size-Desk;
+
+            @media (max-width:1200px) {
+                font-size: variables.$font-size-desk;
+
+            }
+
+            @media (max-width:768px) {
+                font-size: variables.$font-size-tablette;
+            }
+
+            @media (max-width:480px) {
+                font-size: variables.$font-size-phone;
+
+            }
+        }
+    }
+
+    .formation-list-text-end {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        text-align: end;
+
+        @media (max-width:650px) {
+            align-items: center;
+            text-align: center;
+            padding: 0;
+        }
+
+    }
+
+    .formation-list-text-border {
+        @media (max-width:650px) {
+            border: none;
+        }
+    }
 }

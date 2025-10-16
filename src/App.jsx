@@ -1,4 +1,3 @@
-import './App.scss'
 import { Routes, Route, Link } from 'react-router-dom'
 import Portfolio from './pages/Portfolio'
 import JavascriptProject from './pages/JavascriptProject'

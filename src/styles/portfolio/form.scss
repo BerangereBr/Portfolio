@@ -18,9 +18,15 @@
     }
 
     h1 {
-        border-bottom: 4px solid variables.$border-color;
-        font-size: variables.$font-size-title-desk;
+        border-bottom: 4px solid variables.$color-primary-dark;
+        font-size: variables.$font-size-title-Desk;
         font-weight: bold;
+        margin-bottom: 50px;
+
+        @media (max-width:1200px) {
+            font-size: variables.$font-size-title-desk;
+            margin-bottom: 30px;
+        }
 
         @media (max-width:768px) {
             font-size: variables.$font-size-title-tablette;
@@ -28,7 +34,6 @@
 
         @media (max-width:480px) {
             font-size: variables.$font-size-title-phone;
-
         }
     }
 }
@@ -40,7 +45,12 @@
     gap: 20px;
 
     label {
-        font-size: variables.$font-size-desk;
+        font-size: variables.$font-size-Desk;
+
+        @media (max-width:1200px) {
+            font-size: variables.$font-size-desk;
+
+        }
 
         @media (max-width:768px) {
             font-size: variables.$font-size-tablette;
@@ -54,31 +64,29 @@
 
     input {
         height: 50px;
-        border-radius: 20px;
         border: 2px solid variables.$color-primary;
     }
 
     textarea {
         height: 70px;
-        border-radius: 20px;
         border: 2px solid variables.$color-primary;
 
     }
 
     button {
         height: 50px;
-        border-radius: 20px;
         border: 2px solid variables.$color-primary;
         background-color: variables.$color-primary;
         cursor: pointer;
-        font-size: variables.$font-size-desk;
+        color: variables.$background-color;
+        font-size: variables.$font-size-title-desk;
 
         @media (max-width:768px) {
-            font-size: variables.$font-size-tablette;
+            font-size: variables.$font-size-title-tablette;
         }
 
         @media (max-width:480px) {
-            font-size: variables.$font-size-phone;
+            font-size: variables.$font-size-title-phone;
 
         }
     }

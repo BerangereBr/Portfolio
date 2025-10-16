@@ -1,6 +1,6 @@
 import '../styles/projects/project.scss'
 import { Link } from 'react-router-dom'
-import fleche from '../assets/logo/fleche.png'
+import arrow from '../assets/logo/arrow.png'
 
 function PageProject({ title, objectif, competence, resultat, amelioration, banner }) {
 
@@ -8,7 +8,7 @@ function PageProject({ title, objectif, competence, resultat, amelioration, bann
         <>
             <header className='project-header'>
                 <div className='arrow-div'>
-                    <Link to='/'><img src={fleche} alt='fleche retour' className='arrow' /></Link>
+                    <Link to='/'><img src={arrow} alt='fleche retour' className='arrow' /></Link>
                 </div>
                 <div className='project-banner'>
                     <div className='project-banner-div'>

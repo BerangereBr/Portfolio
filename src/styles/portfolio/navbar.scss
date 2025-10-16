@@ -5,7 +5,7 @@
     top: 0;
     width: 100vw;
     z-index: 1;
-    background: variables.$color-primary;
+    background: linear-gradient(70deg, rgba(variables.$background-color, 0.7), rgba(variables.$color-shadow, 0.7), rgba(variables.$color-primary-light, 0.7));
 
     @media (max-width:768px) {
         visibility: hidden;
@@ -15,12 +15,11 @@
         display: flex;
         justify-content: flex-end;
         align-items: center;
-        color: variables.$text-primary;
+        color: black;
         margin-right: 50px;
 
         @media (max-width:768px) {
-            justify-content: center;
-            margin: 0;
+            margin-right: 20px;
         }
 
         .liste-nav {
@@ -52,7 +51,7 @@
             }
 
             li:hover {
-                color: variables.$color-primary-light;
+                color: variables.$color-primary-dark;
             }
         }
     }

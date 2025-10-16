@@ -42,7 +42,6 @@
 
         p {
             text-decoration: underline;
-            color: variables.$text-secondary;
             font-size: variables.$font-size-title-desk;
 
             @media (max-width:768px) {
