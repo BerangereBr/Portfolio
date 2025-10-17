@@ -4,7 +4,7 @@ import '../../styles/portfolio/form.scss'
 function ContactForm() {
     const [state, handleSubmit] = useForm("xblzqzzd");
     if (state.succeeded) {
-        return <p>Thanks for joining!</p>;
+        return <p>Message envoyé</p>;
     }
     return (
 

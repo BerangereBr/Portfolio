@@ -14,6 +14,7 @@ function JavascriptPage() {
                 competence={project.Competences}
                 resultat={project.Resultats}
                 amelioration={project.Amelioration}
+                video={"/video/javascriptVideo.mp4"}
             />
             <Footer />
 

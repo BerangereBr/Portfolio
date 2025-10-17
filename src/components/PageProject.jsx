@@ -2,7 +2,7 @@ import '../styles/projects/project.scss'
 import { Link } from 'react-router-dom'
 import arrow from '../assets/logo/arrow.png'
 
-function PageProject({ title, objectif, competence, resultat, amelioration, banner }) {
+function PageProject({ title, objectif, competence, resultat, amelioration, banner, video }) {
 
     return (
         <>
@@ -37,6 +37,18 @@ function PageProject({ title, objectif, competence, resultat, amelioration, bann
                         <h2>Perspéctive d'amélioration</h2>
                         <p>{amelioration}</p>
                     </div>
+                </div>
+                <div className='project-video-container'>
+                    <video width="600" height="auto" controls autoPlay muted loop>
+                        <source src={video} type="video/mp4" />
+                        <track
+                            src="/video/audio.vtt"
+                            kind="subtitles"
+                            srcLang="fr"
+                            label="Sous-titres test"
+                            default
+                        />
+                    </video>
                 </div>
             </main>
         </>

@@ -14,6 +14,7 @@ function NodejsPage() {
                 competence={project.Competences}
                 resultat={project.Resultats}
                 amelioration={project.Amelioration}
+                video={"video/nodejsVideo.mp4"}
             />
             <Footer />
         </>

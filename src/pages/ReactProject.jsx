@@ -14,6 +14,7 @@ function ReactPage() {
                 competence={project.Competences}
                 resultat={project.Resultats}
                 amelioration={project.Amelioration}
+                video={"/video/reactVideo.mp4"}
             />
             <Footer />
         </>
