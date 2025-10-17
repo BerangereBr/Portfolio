@@ -7,7 +7,7 @@ function Footer() {
     return (
         <section id='footer'>
             <div className='footer-container'>
-                <div className='footer-container-img'><img src={avatar} alt="Jean Dupont" itemprop="image" /></div>
+                <div className='footer-container-img'><img src={avatar} alt="avatar Bérangère Brun" /></div>
                 <div className='footer-container-text'>
                     <h1>Bérangère Brun</h1>
                     <p>Montpellier, France</p>
