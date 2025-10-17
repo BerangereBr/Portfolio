@@ -21,7 +21,7 @@ function Navbar() {
 
     return (
         <>
-            <div className='container-navbar'>
+            <nav className='container-navbar'>
                 <div className='navbar'>
                     <ul className='liste-nav'>
                         <li onClick={() => scrollSection('accueil')}>Accueil</li>
@@ -31,8 +31,8 @@ function Navbar() {
                         <li onClick={() => scrollSection('form')}>Contact</li>
                     </ul>
                 </div>
-            </div >
-            <div className='navbar-phone'>
+            </nav >
+            <nav className='navbar-phone'>
                 <div className='navbar-phone-button'>
                     <button onClick={() => setOpen(!open)}>
                         {open ? <img src={close} alt='menu'></img> : <img src={menu} alt='menu'></img>}
@@ -46,7 +46,7 @@ function Navbar() {
                         <li onClick={() => scrollSection('formation')}>Parcours</li>
                         <li onClick={() => scrollSection('form')}>Contact</li>
                     </ul>}
-            </div>
+            </nav>
         </>
     )
 }

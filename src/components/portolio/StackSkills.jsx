@@ -20,7 +20,7 @@ function StackSkills() {
                 </ul>
             </div>
             <div className="stack-container">
-                <h2 className='stack-title'>Stack technique</h2>
+                <h2 className='stack-title'>Stacks techniques</h2>
                 <div className='stack-logo'>
                     <img src={html5} alt='logo html5' />
                     <img src={sass} alt='logo saas' />

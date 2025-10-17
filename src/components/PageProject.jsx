@@ -2,13 +2,13 @@ import '../styles/projects/project.scss'
 import { Link } from 'react-router-dom'
 import arrow from '../assets/logo/arrow.png'
 
-function PageProject({ title, objectif, competence, resultat, amelioration, banner, video }) {
+function PageProject({ title, objectif, competence, resultat, amelioration, stacks, banner, video }) {
 
     return (
         <>
             <header className='project-header'>
                 <div className='arrow-div'>
-                    <Link to='/'><img src={arrow} alt='fleche retour' className='arrow' /></Link>
+                    <Link to='/#projects'><img src={arrow} alt='fleche retour' className='arrow' /></Link>
                 </div>
                 <div className='project-banner'>
                     <div className='project-banner-div'>
@@ -36,6 +36,10 @@ function PageProject({ title, objectif, competence, resultat, amelioration, bann
                     <div>
                         <h2>Perspéctive d'amélioration</h2>
                         <p>{amelioration}</p>
+                    </div>
+                    <div>
+                        <h2>Stacks techniques</h2>
+                        <p>{stacks}</p>
                     </div>
                 </div>
                 <div className='project-video-container'>

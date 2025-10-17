@@ -21,9 +21,7 @@ function Portfolio() {
                 <Formation />
                 <Form />
             </main>
-            <footer>
-                <Footer />
-            </footer>
+            <Footer />
         </>
     )
 }

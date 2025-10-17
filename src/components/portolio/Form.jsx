@@ -1,4 +1,3 @@
-import React from 'react';
 import { useForm, ValidationError } from '@formspree/react';
 import '../../styles/portfolio/form.scss'
 function ContactForm() {
@@ -16,6 +15,7 @@ function ContactForm() {
                 id="email"
                 type="email"
                 name="email"
+                required
             />
             <ValidationError
                 prefix="Email"
@@ -28,6 +28,7 @@ function ContactForm() {
             <textarea
                 id="message"
                 name="message"
+                required
             />
             <ValidationError
                 prefix="Message"
@@ -37,6 +38,9 @@ function ContactForm() {
             <button type="submit" disabled={state.submitting}>
                 Envoyer
             </button>
+            {Array.isArray(state.errors) && state.errors.length > 0 && (
+                <p>Une erreur est survenue.</p>
+            )}
         </form>
     );
 }
