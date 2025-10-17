@@ -6,14 +6,13 @@ import avatar from '../assets/images/avatar.png'
 function Footer() {
     return (
         <section id='footer'>
-            <div itemscope itemtype="https://schema.org/Person" className='footer-container'>
+            <div className='footer-container'>
                 <div className='footer-container-img'><img src={avatar} alt="Jean Dupont" itemprop="image" /></div>
                 <div className='footer-container-text'>
-                    <h1 itemprop="name">Bérangère Brun</h1>
-                    <p itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-                        <span itemprop="addressLocality">Montpellier</span>,<br></br>
-                        <span itemprop="addressCountry">France</span>
-                    </p>
+                    <h1>Bérangère Brun</h1>
+                    <p>Montpellier, France</p>
+                    <p>brunberangere@gmail.com</p>
+
                 </div>
                 <div className='footer-container-logo'>
                     <a href='https://github.com/BerangereBr' target='_blank'><img src={github} alt='logo github' className="footer_logo" /></a>

@@ -5,12 +5,14 @@ import ReactProject from './pages/ReactProject'
 import NodejsProject from './pages/NodejsProject'
 import ScrollToTop from './components/ScrollToTop'
 import Error from './components/Error'
+import PersonSchema from './components/SEO/PersonSchema'
 
 function App() {
 
   return (
     <>
       <ScrollToTop />
+      <PersonSchema />
       <Routes>
         <Route path='/' element={<Portfolio />} />
         <Route path='/projet_javascript' element={<JavascriptProject />} />
