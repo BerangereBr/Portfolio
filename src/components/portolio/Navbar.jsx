@@ -24,11 +24,11 @@ function Navbar() {
             <nav className='container-navbar'>
                 <div className='navbar'>
                     <ul className='liste-nav'>
-                        <li onClick={() => scrollSection('accueil')}>Accueil</li>
-                        <li onClick={() => scrollSection('about')}>Présentation</li>
-                        <li onClick={() => scrollSection('projects')}>Projets</li>
-                        <li onClick={() => scrollSection('formation')}>Parcours</li>
-                        <li onClick={() => scrollSection('form')}>Contact</li>
+                        <li><a href='#accueil' onClick={() => scrollSection('accueil')}>Accueil</a></li>
+                        <li><a href='#about' onClick={() => scrollSection('about')}>Présentation</a></li>
+                        <li><a href='#projects' onClick={() => scrollSection('projects')}>Projets</a></li>
+                        <li><a href='#formation' onClick={() => scrollSection('formation')}>Parcours</a></li>
+                        <li><a href='#contact' onClick={() => scrollSection('form')}>Contact</a></li>
                     </ul>
                 </div>
             </nav >
@@ -40,11 +40,11 @@ function Navbar() {
                 </div>
                 {open &&
                     <ul className='liste-nav-phone'>
-                        <li onClick={() => scrollSection('accueil')}>Accueil</li>
-                        <li onClick={() => scrollSection('about')}>Présentation</li>
-                        <li onClick={() => scrollSection('projects')}>Projets</li>
-                        <li onClick={() => scrollSection('formation')}>Parcours</li>
-                        <li onClick={() => scrollSection('form')}>Contact</li>
+                        <li><a href='#accueil' onClick={() => scrollSection('accueil')}>Accueil</a></li>
+                        <li><a href='#about' onClick={() => scrollSection('about')}>Présentation</a></li>
+                        <li><a href='#projects' onClick={() => scrollSection('projects')}>Projets</a></li>
+                        <li><a href='#formation' onClick={() => scrollSection('formation')}>Parcours</a></li>
+                        <li><a href='#contact' onClick={() => scrollSection('form')}>Contact</a></li>
                     </ul>}
             </nav>
         </>

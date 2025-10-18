@@ -57,13 +57,33 @@
     input {
         height: 50px;
         border: 2px solid variables.$color-primary-dark;
-        border-radius: 20px;
+        border-radius: 10px;
+        font-size: variables.$font-size-desk;
+
+        @media (max-width:768px) {
+            font-size: variables.$font-size-tablette;
+        }
+
+        @media (max-width:480px) {
+            font-size: variables.$font-size-phone;
+
+        }
     }
 
     textarea {
         height: 70px;
         border: 2px solid variables.$color-primary-dark;
-        border-radius: 20px;
+        border-radius: 10px;
+        font-size: variables.$font-size-desk;
+
+        @media (max-width:768px) {
+            font-size: variables.$font-size-tablette;
+        }
+
+        @media (max-width:480px) {
+            font-size: variables.$font-size-phone;
+
+        }
 
     }
 
@@ -74,7 +94,7 @@
         cursor: pointer;
         color: variables.$color-primary-dark;
         font-size: variables.$font-size-title-desk;
-        border-radius: 20px;
+        border-radius: 10px;
 
         @media (max-width:768px) {
             font-size: variables.$font-size-title-tablette;
