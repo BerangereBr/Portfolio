@@ -1,7 +1,7 @@
 import '../styles/footer.scss'
 import github from '../assets/logo/githubLight.png'
 import linkedin from '../assets/logo/linkedinLight.png'
-import avatar from '../assets/images/avatar.png'
+import avatar from '../assets/images/avatar.webp'
 
 function Footer() {
     return (

@@ -12,7 +12,7 @@ function PageProject({ title, objectif, competence, resultat, amelioration, stac
                 </div>
                 <div className='project-banner'>
                     <div className='project-banner-div'>
-                        <img src={banner} alt={`projet ${title}`} className='banner-picture' fetchPriority="high" width='1440px' height='760px'></img>
+                        <img src={banner} alt={`projet ${title}`} className='banner-picture' fetchPriority="high" width='700px' height='500px'></img>
                     </div>
                 </div>
                 <div className='project-header-title'>

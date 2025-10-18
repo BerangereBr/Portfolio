@@ -25,7 +25,7 @@ function StackSkills() {
                     <img src={html5} alt='logo html5' />
                     <img src={sass} alt='logo saas' />
                     <img src={javascript} alt='logo javascript' />
-                    <img src={react} alt='logo react' className='logo-react' />
+                    <img src={react} alt='logo react' />
                     <img src={nodejs} alt='logo nodejs' />
                     <img src={mongoDB} alt='logo mongoDB' />
                 </div>
