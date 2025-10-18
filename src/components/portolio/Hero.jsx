@@ -5,7 +5,9 @@ import avatar from '../../assets/images/avatar.webp'
 import mail from '../../assets/logo/mail.png'
 
 function Hero() {
-    const scrollSection = (id) => {
+    const scrollSection = (e, id) => {
+        e.preventDefault()
+
         const element = document.getElementById(id);
         const navbar = document.querySelector('.container-navbar')
         if (element) {
@@ -22,7 +24,7 @@ function Hero() {
                 <div className=' accueil-link'>
                     <a href='https://github.com/BerangereBr' target='_blank'><img src={github} alt='logo github' className="footer-logo" /></a>
                     <a href='https://www.linkedin.com/in/bérangère-brun-6208712a0' target='_blank'><img src={linkedin} alt='logo linkedin' className="footer-logo" /></a>
-                    <a href="#contact" onClick={() => scrollSection('form')}><img src={mail} alt='logo mail' className="footer-logo" /></a>
+                    <a href="#form" onClick={(e) => scrollSection(e, 'form')}><img src={mail} alt='logo mail' className="footer-logo" /></a>
                 </div>
             </div>
         </section>
