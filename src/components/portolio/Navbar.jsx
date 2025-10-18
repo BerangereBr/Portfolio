@@ -41,11 +41,10 @@ function Navbar() {
                 </div>
                 {open &&
                     <ul className='liste-nav-phone'>
-                        <li><a href='#accueil' onClick={() => scrollSection('accueil')}>Accueil</a></li>
-                        <li><a href='#about' onClick={() => scrollSection('about')}>Présentation</a></li>
-                        <li><a href='#projects' onClick={() => scrollSection('projects')}>Projets</a></li>
-                        <li><a href='#formation' onClick={() => scrollSection('formation')}>Parcours</a></li>
-                        <li><a href='#contact' onClick={() => scrollSection('form')}>Contact</a></li>
+                        <li><a href='#about' onClick={(e) => scrollSection(e, 'about')}>Présentation</a></li>
+                        <li><a href='#projects' onClick={(e) => scrollSection(e, 'projects')}>Projets</a></li>
+                        <li><a href='#formation' onClick={(e) => scrollSection(e, 'formation')}>Parcours</a></li>
+                        <li><a href='#contact' onClick={(e) => scrollSection(e, 'form')}>Contact</a></li>
                     </ul>}
             </nav>
         </>
