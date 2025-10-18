@@ -44,7 +44,7 @@ function Navbar() {
                         <li><a href='#about' onClick={(e) => scrollSection(e, 'about')}>Présentation</a></li>
                         <li><a href='#projects' onClick={(e) => scrollSection(e, 'projects')}>Projets</a></li>
                         <li><a href='#formation' onClick={(e) => scrollSection(e, 'formation')}>Parcours</a></li>
-                        <li><a href='#contact' onClick={(e) => scrollSection(e, 'form')}>Contact</a></li>
+                        <li><a href='#form' onClick={(e) => scrollSection(e, 'form')}>Contact</a></li>
                     </ul>}
             </nav>
         </>
