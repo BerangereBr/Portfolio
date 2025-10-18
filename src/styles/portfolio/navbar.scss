@@ -53,10 +53,10 @@
                     color: black;
                     text-decoration: none;
                 }
-            }
 
-            li:hover {
-                color: variables.$color-primary-dark;
+                a:hover {
+                    color: variables.$color-primary-dark;
+                }
             }
         }
     }
