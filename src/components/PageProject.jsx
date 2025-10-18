@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import arrow from '../assets/logo/arrow.png'
 
 function PageProject({ title, objectif, competence, resultat, amelioration, stacks, banner, video }) {
-
+    const isMobile = innerWidth < 768
     return (
         <>
             <header className='project-header'>
@@ -43,7 +43,7 @@ function PageProject({ title, objectif, competence, resultat, amelioration, stac
                     </div>
                 </div>
                 <div className='project-video-container'>
-                    <video width="600" height="auto" controls autoPlay muted loop>
+                    <video width="600" height="auto" controls autoPlay={!isMobile} muted loop>
                         <source src={video} type="video/mp4" />
                         <track
                             src="/video/audio.vtt"
