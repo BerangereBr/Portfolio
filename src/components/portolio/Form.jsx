@@ -48,7 +48,7 @@ function ContactForm() {
 function Form() {
     return (
         <section id='form'>
-            <h1>Contact</h1>
+            <h2>Contact</h2>
             <ContactForm />
         </section>
     );

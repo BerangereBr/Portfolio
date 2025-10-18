@@ -4,7 +4,7 @@ function About() {
     return (
         <section id='about' className='about'>
             <div className='about-container'>
-                <h1 className="about-title">À propos</h1>
+                <h2 className="about-title">À propos</h2>
                 <div className='about-paragraphe'>
                     <p>Mon intérêt pour le développement web a commencé avant ma formation, lorsque j'ai créé un site autour d'un jeu vidéo.
                         Cette première expérience m'a permis de découvrir les bases du code.

@@ -13,13 +13,13 @@ function Projects() {
 
     return (
         <section id='projects'>
-            <h1 className='projects-title'>Projets</h1>
+            <h2 className='projects-title'>Projets</h2>
             <div className='projects-container'>
-                <div className='project'>
+                <article className='project'>
                     <Link to='/projet_javascript' className='project-link'>
                         <div className='project-link-div'><img src={headerJavascript} alt="site javascript" className='project-link-img'></img></div>
                         <div className='project-description'>
-                            <h2>{project1.Titre}</h2>
+                            <h3>{project1.Titre}</h3>
                             <p>{project1.Contexte}</p>
                         </div>
                     </Link>
@@ -28,12 +28,12 @@ function Projects() {
                             <img src={github} alt='github logo'></img>
                         </a>
                     </div>
-                </div>
-                <div className='project'>
+                </article>
+                <article className='project'>
                     <Link to='/projet_react' className='project-link'>
                         <div className='project-link-div'><img src={headerReact} alt="site react" className='project-link-img'></img></div>
                         <div className='project-description'>
-                            <h2>{project2.Titre}</h2>
+                            <h3>{project2.Titre}</h3>
                             <p>{project2.Contexte}</p>
                         </div>
                     </Link>
@@ -42,12 +42,12 @@ function Projects() {
                             <img src={github} alt='github logo'></img>
                         </a>
                     </div>
-                </div>
-                <div className='project'>
+                </article>
+                <article className='project'>
                     <Link to='/projet_nodejs' className='project-link'>
                         <div className='project-link-div'><img src={headerNodejs} alt="site nodejs" className='project-link-img'></img></div>
                         <div className='project-description'>
-                            <h2>{project3.Titre}</h2>
+                            <h3>{project3.Titre}</h3>
                             <p>{project3.Contexte}</p>
                         </div>
                     </Link>
@@ -56,7 +56,7 @@ function Projects() {
                             <img src={github} alt='github logo'></img>
                         </a>
                     </div>
-                </div>
+                </article>
             </div>
         </section >
     )

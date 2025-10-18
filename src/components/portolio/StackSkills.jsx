@@ -10,7 +10,7 @@ function StackSkills() {
     return (
 
         <section id='stackSkills'>
-            <div className='skills-container'>
+            <article className='skills-container'>
                 <ul className='skills-list'>
                     <li>Empathie</li>
                     <li>Adaptabilité</li>
@@ -18,8 +18,8 @@ function StackSkills() {
                     <li>Organisation</li>
                     <li>Esprit d'équipe</li>
                 </ul>
-            </div>
-            <div className="stack-container">
+            </article>
+            <article className="stack-container">
                 <h2 className='stack-title'>Stacks techniques</h2>
                 <div className='stack-logo'>
                     <img src={html5} alt='logo html5' />
@@ -29,8 +29,7 @@ function StackSkills() {
                     <img src={nodejs} alt='logo nodejs' />
                     <img src={mongoDB} alt='logo mongoDB' />
                 </div>
-            </div>
-
+            </article>
         </section >
     )
 }

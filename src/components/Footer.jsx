@@ -9,7 +9,7 @@ function Footer() {
             <div className='footer-container'>
                 <div className='footer-container-img'><img src={avatar} alt="avatar Bérangère Brun" /></div>
                 <div className='footer-container-text'>
-                    <h1>Bérangère Brun</h1>
+                    <h2>Bérangère Brun</h2>
                     <p>Montpellier, France</p>
                     <p>brunberangere@gmail.com</p>
                 </div>

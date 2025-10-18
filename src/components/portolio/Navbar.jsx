@@ -6,7 +6,8 @@ import close from '../../assets/logo/close.png'
 function Navbar() {
     const [open, setOpen] = useState(false)
 
-    const scrollSection = (id) => {
+    const scrollSection = (e, id) => {
+        e.preventDefault()
         const element = document.getElementById(id);
         const navbar = document.querySelector('.container-navbar')
         if (element && window.innerWidth > 768) {
@@ -24,11 +25,11 @@ function Navbar() {
             <nav className='container-navbar'>
                 <div className='navbar'>
                     <ul className='liste-nav'>
-                        <li><a href='#accueil' onClick={() => scrollSection('accueil')}>Accueil</a></li>
-                        <li><a href='#about' onClick={() => scrollSection('about')}>Présentation</a></li>
-                        <li><a href='#projects' onClick={() => scrollSection('projects')}>Projets</a></li>
-                        <li><a href='#formation' onClick={() => scrollSection('formation')}>Parcours</a></li>
-                        <li><a href='#contact' onClick={() => scrollSection('form')}>Contact</a></li>
+                        <li><a href='#accueil' onClick={(e) => scrollSection(e, 'accueil')}>Accueil</a></li>
+                        <li><a href='#about' onClick={(e) => scrollSection(e, 'about')}>Présentation</a></li>
+                        <li><a href='#projects' onClick={(e) => scrollSection(e, 'projects')}>Projets</a></li>
+                        <li><a href='#formation' onClick={(e) => scrollSection(e, 'formation')}>Parcours</a></li>
+                        <li><a href='#contact' onClick={(e) => scrollSection(e, 'form')}>Contact</a></li>
                     </ul>
                 </div>
             </nav >
