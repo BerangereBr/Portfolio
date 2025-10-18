@@ -32,7 +32,7 @@ function Navbar() {
                     </ul>
                 </div>
             </nav >
-            <nav className='navbar-phone'>
+            <nav className={`navbar-phone ${open ? 'open' : 'closed'}`}>
                 <div className='navbar-phone-button'>
                     <button onClick={() => setOpen(!open)}>
                         {open ? <img src={close} alt='menu'></img> : <img src={menu} alt='menu'></img>}

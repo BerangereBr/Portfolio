@@ -71,12 +71,6 @@
         position: absolute;
         z-index: 2;
         padding: 20px;
-        background-color: variables.$background-color-button;
-
-        a {
-            color: black;
-            text-decoration: none;
-        }
 
         .navbar-phone-button {
             display: flex;
@@ -97,9 +91,20 @@
 
     .liste-nav-phone {
         list-style: none;
-        line-height: 25px;
+        line-height: 30px;
         margin: 0;
         padding-left: 10px;
         font-size: variables.$font-size-h2-phone;
+
+        a {
+            color: black;
+            text-decoration: none;
+        }
+
     }
+}
+
+.navbar-phone.open {
+    background-color: variables.$background-color-button;
+    border-radius: 0 20px 20px 20px;
 }
