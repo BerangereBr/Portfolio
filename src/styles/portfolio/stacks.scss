@@ -1,0 +1,71 @@
+@use '../variables';
+
+#stacks {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 80px;
+    gap: 80px;
+
+    @media (max-width:768px) {
+        gap: 50px;
+        padding-bottom: 50px;
+    }
+
+    @media (max-width:480px) {
+        gap: 20px;
+        padding-bottom: 20px;
+    }
+
+    .stack-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+
+        h2 {
+            font-size: variables.$font-size-title-desk;
+            margin-bottom: 50px;
+            color: variables.$color-primary-dark;
+
+            @media (max-width:768px) {
+                font-size: variables.$font-size-title-tablette;
+                margin-bottom: 20px;
+            }
+
+            @media (max-width:480px) {
+                font-size: variables.$font-size-title-phone;
+
+            }
+        }
+
+        .stack-logo {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            width: 100%;
+
+            @media (max-width:768px) {
+                display: grid;
+                gap: 10px;
+                grid-template-columns: 100px 100px 100px;
+            }
+
+            img {
+                width: 100px;
+                height: 100px;
+                justify-self: center;
+
+                @media (max-width:768px) {
+                    width: 80px;
+                    height: 80px;
+                }
+            }
+        }
+
+    }
+}

@@ -53,4 +53,62 @@
             }
         }
     }
+
+    .skills-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 20px;
+
+        .skills-list {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            list-style: none;
+            padding: 0;
+            text-align: center;
+            gap: 20px;
+
+            @media (max-width:1044px) {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                width: 100%;
+
+                li:nth-child(5) {
+                    grid-column: 2/-1;
+                }
+            }
+
+            @media (max-width:540px) {
+                grid-template-columns: 1fr 1fr;
+
+                li:nth-child(5) {
+                    grid-column: 1/-1;
+                }
+            }
+
+            li {
+                display: flex;
+                justify-content: center;
+                border: 2px solid variables.$color-primary-dark;
+                border-radius: 20px;
+                padding: 10px;
+                font-size: variables.$font-size-desk;
+                color: variables.$color-primary-dark;
+                font-weight: 500;
+                background-color: variables.$background-color-button;
+
+                @media (max-width:768px) {
+                    font-size: variables.$font-size-tablette;
+                }
+
+                @media (max-width:480px) {
+                    font-size: variables.$font-size-phone;
+                }
+            }
+        }
+    }
+
 }

@@ -1,7 +1,7 @@
 import About from '../components/portolio/About'
 import Hero from '../components/portolio/Hero'
 import Navbar from '../components/portolio/Navbar'
-import StackSkills from '../components/portolio/StackSkills'
+import Stacks from '../components/portolio/Stacks'
 import Projects from '../components/portolio/Projects'
 import Footer from '../components/Footer'
 import Formation from '../components/portolio/Formation'
@@ -16,7 +16,7 @@ function Portfolio() {
             </header>
             <main>
                 <About />
-                <StackSkills />
+                <Stacks />
                 <Projects />
                 <Formation />
                 <Form />

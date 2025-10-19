@@ -18,6 +18,15 @@ function About() {
                     </p>
                 </div>
             </div>
+            <div className='skills-container'>
+                <ul className='skills-list'>
+                    <li>Empathie</li>
+                    <li>Adaptabilité</li>
+                    <li>Patience</li>
+                    <li>Organisation</li>
+                    <li>Esprit d'équipe</li>
+                </ul>
+            </div>
         </section>
     )
 }
