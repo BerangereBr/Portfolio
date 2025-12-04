@@ -24,7 +24,7 @@ function Formation() {
                     <li className='formation-list-text-none'></li>
                     <li className='formation-list-text formation-list-text-border'>
                         <h3>2025 : Formation Développeuse Web</h3>
-                        <p>OpenClassRooms, en cours</p>
+                        <p>OpenClassRooms</p>
                     </li>
                 </ul>
             </div>

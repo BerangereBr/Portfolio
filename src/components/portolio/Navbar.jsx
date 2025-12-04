@@ -5,6 +5,7 @@ import close from '../../assets/logo/close.png'
 
 function Navbar() {
     const [open, setOpen] = useState(false)
+    const [activeBtn, setActiveBtn] = useState('accueil')
 
     const scrollSection = (e, id) => {
         e.preventDefault()
@@ -25,11 +26,11 @@ function Navbar() {
             <nav className='container-navbar'>
                 <div className='navbar'>
                     <ul className='liste-nav'>
-                        <li><a href='#accueil' onClick={(e) => scrollSection(e, 'accueil')}>Accueil</a></li>
-                        <li><a href='#about' onClick={(e) => scrollSection(e, 'about')}>Présentation</a></li>
-                        <li><a href='#projects' onClick={(e) => scrollSection(e, 'projects')}>Projets</a></li>
-                        <li><a href='#formation' onClick={(e) => scrollSection(e, 'formation')}>Parcours</a></li>
-                        <li><a href='#form' onClick={(e) => scrollSection(e, 'form')}>Contact</a></li>
+                        <li><a className={`nav-a ${activeBtn === 'accueil' ? 'active' : ''}`} href='#accueil' onClick={(e) => { scrollSection(e, 'accueil'); setActiveBtn('accueil') }}>Accueil</a></li>
+                        <li><a className={`nav-a ${activeBtn === 'about' ? 'active' : ''}`} href='#about' onClick={(e) => { scrollSection(e, 'about'); setActiveBtn('about') }}>Présentation</a></li>
+                        <li><a className={`nav-a ${activeBtn === 'projects' ? 'active' : ''}`} href='#projects' onClick={(e) => { scrollSection(e, 'projects'); setActiveBtn('projects') }}>Projets</a></li>
+                        <li><a className={`nav-a ${activeBtn === 'formation' ? 'active' : ''}`} href='#formation' onClick={(e) => { scrollSection(e, 'formation'); setActiveBtn('formation') }}>Parcours</a></li>
+                        <li><a className={`nav-a ${activeBtn === 'form' ? 'active' : ''}`} href='#form' onClick={(e) => { scrollSection(e, 'form'); setActiveBtn('form') }}>Contact</a></li>
                     </ul>
                 </div>
             </nav >
