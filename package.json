@@ -11,9 +11,10 @@
   },
   "dependencies": {
     "@formspree/react": "^3.0.0",
-    "react": "^19.1.1",
-    "react-dom": "^19.1.1",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3",
     "react-router-dom": "^7.9.4",
+    "react-server-dom-webpack": "^19.2.3",
     "sass": "^1.93.2"
   },
   "devDependencies": {
