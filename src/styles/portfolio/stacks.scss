@@ -25,22 +25,6 @@
         text-align: center;
         width: 100%;
 
-        h2 {
-            font-size: variables.$font-size-title-desk;
-            margin-bottom: 50px;
-            color: variables.$color-primary-dark;
-
-            @media (max-width:768px) {
-                font-size: variables.$font-size-title-tablette;
-                margin-bottom: 20px;
-            }
-
-            @media (max-width:480px) {
-                font-size: variables.$font-size-title-phone;
-
-            }
-        }
-
         .stack-logo {
             display: flex;
             flex-direction: row;

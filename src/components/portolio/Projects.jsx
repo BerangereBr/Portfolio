@@ -4,7 +4,7 @@ import headerJavascript from '../../assets/images/projectJavascript/headerJavasc
 import headerReact from '../../assets/images/projectReact/headerReact.webp'
 import headerNodejs from '../../assets/images/projectNodejs/headerNodejs.webp'
 import { Link } from 'react-router-dom'
-import github from '../../assets/logo/githubRed.png'
+import github from '../../assets/logo/github-dark.png'
 
 function Projects() {
     const project1 = data[0];
@@ -24,7 +24,7 @@ function Projects() {
                         </div>
                     </Link>
                     <div className='github-div'>
-                        <a href='https://github.com/BerangereBr/Projet3_Architecte_Sophie_Bluel.git'>Code
+                        <a href='https://github.com/BerangereBr/Projet3_Architecte_Sophie_Bluel.git'>
                             <img src={github} alt='github logo'></img>
                         </a>
                     </div>
@@ -38,7 +38,7 @@ function Projects() {
                         </div>
                     </Link>
                     <div className='github-div'>
-                        <a href='https://github.com/BerangereBr/Projet5_Kasa.git'>Code
+                        <a href='https://github.com/BerangereBr/Projet5_Kasa.git'>
                             <img src={github} alt='github logo'></img>
                         </a>
                     </div>
@@ -52,7 +52,7 @@ function Projects() {
                         </div>
                     </Link>
                     <div className='github-div'>
-                        <a href='https://github.com/BerangereBr/Projet6_MonVieuxGrimoire.git'>Code
+                        <a href='https://github.com/BerangereBr/Projet6_MonVieuxGrimoire.git'>
                             <img src={github} alt='github logo'></img>
                         </a>
                     </div>

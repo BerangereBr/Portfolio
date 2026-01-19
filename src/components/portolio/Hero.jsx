@@ -1,6 +1,6 @@
 import '../../styles/portfolio/hero.scss'
-import github from '../../assets/logo/github.png'
-import linkedin from '../../assets/logo/linkedin.png'
+import github from '../../assets/logo/github-dark.png'
+import linkedin from '../../assets/logo/linkedin-dark.png'
 import avatar from '../../assets/images/avatar.webp'
 import mail from '../../assets/logo/mail.png'
 

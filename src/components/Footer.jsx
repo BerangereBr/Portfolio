@@ -1,6 +1,6 @@
 import '../styles/footer.scss'
-import github from '../assets/logo/githubLight.png'
-import linkedin from '../assets/logo/linkedinLight.png'
+import github from '../assets/logo/github-dark.png'
+import linkedin from '../assets/logo/linkedin-dark.png'
 import avatar from '../assets/images/avatar.webp'
 
 function Footer() {

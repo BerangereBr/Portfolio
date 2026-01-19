@@ -5,7 +5,8 @@
     top: 0;
     width: 100vw;
     z-index: 2;
-    background: linear-gradient(70deg, rgba(variables.$background-color, 0.7), rgba(variables.$color-shadow, 0.9), variables.$color-primary-light);
+    background: variables.$background-color-button;
+    box-shadow: 0 2px 4px variables.$color-shadow;
 
     @media (max-width:768px) {
         visibility: hidden;
@@ -15,7 +16,6 @@
         display: flex;
         justify-content: flex-end;
         align-items: center;
-        color: black;
         margin-right: 50px;
 
         @media (max-width:768px) {
@@ -50,16 +50,16 @@
                 }
 
                 a {
-                    color: black;
+                    color: variables.$text-primary;
                     text-decoration: none;
                 }
 
                 a:hover {
-                    color: variables.$color-primary-dark;
+                    color: variables.$color-primary-light;
                 }
 
                 a.active {
-                    color: variables.$color-primary-dark;
+                    color: variables.$color-primary-light;
                 }
             }
         }
@@ -74,11 +74,12 @@
         flex-direction: row;
         position: absolute;
         z-index: 2;
-        padding: 20px;
+        width: 100%;
 
         .navbar-phone-button {
             display: flex;
             align-items: flex-start;
+            padding: 20px;
 
             button {
                 background: none;
@@ -99,9 +100,10 @@
         margin: 0;
         padding-left: 10px;
         font-size: variables.$font-size-h2-phone;
+        padding: 20px;
 
         a {
-            color: black;
+            color: variables.$text-primary;
             text-decoration: none;
         }
 
@@ -109,6 +111,6 @@
 }
 
 .navbar-phone.open {
-    background-color: variables.$background-color-button;
-    border-radius: 0 20px 20px 20px;
+    background-color: rgba(variables.$background-color-button, 0.95);
+    border-radius: 0 0px 20px 20px;
 }

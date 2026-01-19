@@ -7,7 +7,7 @@
     align-items: center;
     height: 100%;
     padding: 80px 0;
-    background-color: variables.$background-color;
+    background: variables.$background-card;
 
     @media (max-width:768px) {
         padding: 50px 0;
@@ -20,7 +20,7 @@
 
     .projects-title {
         margin-bottom: 50px;
-        color: variables.$color-primary-dark;
+        color: variables.$text-primary;
         font-size: variables.$font-size-title-desk;
         font-weight: bold;
 
@@ -56,8 +56,8 @@
             transition: transform 0.3s ease;
             width: 30%;
             border-radius: 20px;
-            background-color: white;
-            border: 2px solid variables.$color-primary-dark;
+            border: 2px solid variables.$color-shadow;
+            background: variables.$background-color;
 
             @media (max-width:1200px) {
                 align-items: center;
@@ -66,10 +66,10 @@
 
             .project-link {
                 text-decoration: none;
-                color: black;
+                color: variables.$text-primary;
 
                 .project-link-div {
-                    border-bottom: 2px solid variables.$color-primary-dark;
+                    // border-bottom: 2px solid variables.$color-primary-dark;
                     overflow: hidden;
                     height: 200px;
                     width: 100%;
@@ -90,7 +90,7 @@
 
                     h3 {
                         font-size: variables.$font-size-h2-desk;
-                        color: variables.$color-primary-dark;
+                        color: variables.$text-primary;
 
                         @media (max-width:768px) {
                             font-size: variables.$font-size-h2-tablette;
@@ -103,6 +103,7 @@
 
                     p {
                         display: flex;
+                        color: variables.$text-secondary;
 
                         @media (max-width:768px) {
                             font-size: variables.$font-size-tablette;
@@ -127,22 +128,9 @@
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    border: 2px solid variables.$color-primary-dark;
-                    padding: 0 5px;
-                    gap: 10px;
                     margin-right: 20px;
                     margin-bottom: 20px;
-                    font-size: variables.$font-size-desk;
                     border-radius: 20px;
-                    background-color: variables.$background-color-button;
-
-                    @media (max-width:768px) {
-                        font-size: variables.$font-size-tablette;
-                    }
-
-                    @media (max-width:480px) {
-                        font-size: variables.$font-size-phone;
-                    }
 
                     img {
                         width: 40px;
@@ -159,7 +147,7 @@
 
         .project:hover {
             transform: scale(1.02);
-            box-shadow: 0px 7px 29px 0px variables.$color-primary-light;
+            box-shadow: 0px 7px 29px 0px variables.$color-shadow;
         }
     }
 

@@ -6,4 +6,6 @@ html {
   padding: 0;
   font-family: 'Poppins', sans-serif;
   box-sizing: border-box;
+  background-color: variables.$background-color;
+  color: variables.$text-primary;
 }

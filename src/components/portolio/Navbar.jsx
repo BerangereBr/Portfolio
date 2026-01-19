@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import '../../styles/portfolio/navbar.scss'
 import menu from '../../assets/logo/menu.png'
 import close from '../../assets/logo/close.png'
@@ -21,6 +21,28 @@ function Navbar() {
         }
     }
 
+    useEffect(() => {
+        const handleScroll = () => {
+            const sections = ['accueil', 'about', 'projects', 'formation', 'form'];
+            const scrollPosition = window.scrollY + (window.innerHeight / 2);
+            for (let i = 0; i < sections.length; i++) {
+                const section = document.getElementById(sections[i]);
+                if (section) {
+                    const sectionTop = section.offsetTop;
+                    const sectionHeight = section.offsetHeight;
+                    if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+                        setActiveBtn(sections[i]);
+                        break;
+                    }
+                }
+            }
+        };
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
     return (
         <>
             <nav className='container-navbar'>
@@ -42,10 +64,10 @@ function Navbar() {
                 </div>
                 {open &&
                     <ul className='liste-nav-phone'>
-                        <li><a href='#about' onClick={(e) => scrollSection(e, 'about')}>Présentation</a></li>
-                        <li><a href='#projects' onClick={(e) => scrollSection(e, 'projects')}>Projets</a></li>
-                        <li><a href='#formation' onClick={(e) => scrollSection(e, 'formation')}>Parcours</a></li>
-                        <li><a href='#form' onClick={(e) => scrollSection(e, 'form')}>Contact</a></li>
+                        <li><a href='#about' onClick={(e) => { scrollSection(e, 'about'); setOpen(false) }}>Présentation</a></li>
+                        <li><a href='#projects' onClick={(e) => { scrollSection(e, 'projects'); setOpen(false) }}>Projets</a></li>
+                        <li><a href='#formation' onClick={(e) => { scrollSection(e, 'formation'); setOpen(false) }}>Parcours</a></li>
+                        <li><a href='#form' onClick={(e) => { scrollSection(e, 'form'); setOpen(false) }}>Contact</a></li>
                     </ul>}
             </nav>
         </>
