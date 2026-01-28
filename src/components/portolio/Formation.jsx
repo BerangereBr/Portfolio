@@ -13,7 +13,7 @@ function Formation() {
                     <li className='formation-list-text-none'></li>
                     <li className='formation-list-text-none'></li>
                     <li className='formation-list-text'>
-                        <h3>2015 - 2020 : Parcours universitaire divers</h3>
+                        <h3>2015 - 2024 : Parcours universitaire divers</h3>
                         <p>Médecine, chimie, biologie, diététique</p>
                     </li>
                     <li className='formation-list-text formation-list-text-end'>
@@ -23,10 +23,13 @@ function Formation() {
                     <li className='formation-list-text-none'></li>
                     <li className='formation-list-text-none'></li>
                     <li className='formation-list-text formation-list-text-border'>
-                        <h3>2025 : Formation Développeuse Web</h3>
+                        <h3>2026 : Formation Développeuse Web</h3>
                         <p>OpenClassRooms</p>
                     </li>
                 </ul>
+                <a href="/cv/CV-BRUN-Berangere.pdf" download>
+                    Télécharger mon CV
+                </a>
             </div>
         </section>
     )
