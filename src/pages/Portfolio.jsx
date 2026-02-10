@@ -19,7 +19,7 @@ function Portfolio() {
                 <About />
                 <Stacks />
                 <Projects />
-                < PersonalProjects />
+                <PersonalProjects />
                 <Formation />
                 <Form />
             </main >
