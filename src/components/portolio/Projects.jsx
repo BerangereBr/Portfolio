@@ -13,7 +13,7 @@ function Projects() {
 
     return (
         <section id='projects'>
-            <h2 className='projects-title'>Projets</h2>
+            <h2 className='projects-title'>Projets formation</h2>
             <div className='projects-container'>
                 <article className='project'>
                     <Link to='/projet_javascript' className='project-link'>

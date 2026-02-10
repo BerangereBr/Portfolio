@@ -1,8 +1,8 @@
-import PageProject from '../components/PageProject'
-import data from '../projects.json'
-import bannerReact from '../assets/images/projectReact/bannerReact.webp'
-import Footer from '../components/Footer'
-import ScrollToTop from '../components/ScrollToTop'
+import PageProject from '../../components/PageProject'
+import data from '../../projects.json'
+import bannerReact from '../../assets/images/projectReact/bannerReact.webp'
+import Footer from '../../components/Footer'
+import ScrollToTop from '../../components/ScrollToTop'
 
 function ReactPage() {
     const project = data[1]
@@ -17,7 +17,7 @@ function ReactPage() {
                 resultat={project.Resultats}
                 amelioration={project.Amelioration}
                 stacks={project.StackTechnique}
-                video={"/video/reactVideo.mp4"}
+                video="/video/reactVideo.mp4"
             />
             <Footer />
         </>

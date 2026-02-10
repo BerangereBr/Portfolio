@@ -25,5 +25,14 @@
         "Competences": "J’ai appris à concevoir une architecture API REST complète, à sécuriser les routes et les données utilisateurs, à gérer l’authentification via tokens, et à manipuler des fichiers avec Multer. Le projet m’a également initié aux bonnes pratiques de sécurité web.",
         "Resultats": "L’API est pleinement fonctionnelle, respecte les spécifications du cahier des charges et passe les tests de validation. Les données sont sécurisées, les requêtes optimisées et la gestion des erreurs est correctement implémentée.",
         "Amelioration": "La mise en place de tests automatisés (Jest, Supertest). Une future version pourrait inclure une pagination des résultats et une gestion avancée des rôles utilisateurs."
+    },
+    {
+        "Titre": "Jeu Snake rétro – React & Tailwind CSS",
+        "Contexte": "Ce projet a été réalisé dans le cadre de mon apprentissage du développement front-end avec React. L’objectif était de reproduire le jeu Snake en version web, afin de consolider mes bases en JavaScript, en gestion d’état React et en logique applicative, tout en travaillant l’interface utilisateur.",
+        "Objectif": "Développer un jeu Snake entièrement fonctionnel avec gestion des déplacements, des collisions, du score et de la vitesse. Le projet devait également inclure un démarrage contrôlé par l’utilisateur, un compte à rebours et une interface rétro soignée.",
+        "StackTechnique": "React, JavaScript, Tailwind CSS, Vite, CSS, Git",
+        "Competences": "J’ai appris à gérer des états complexes avec React, à utiliser efficacement les hooks useState et useEffect, à manipuler des timers (setInterval, setTimeout) et à structurer une logique de jeu claire. Le projet m’a aussi permis de découvrir Tailwind CSS et de créer une interface responsive avec animations et effets visuels.",
+        "Resultats": "Le jeu est pleinement fonctionnel et jouable. Il intègre un système de score, une accélération progressive du snake, un écran de game over et une interface rétro immersive. Le code est structuré, lisible et maintenable.",
+        "Amelioration": "Implémentation d’un système de high score avec localStorage, choix du niveau de difficulté, contrôles tactiles pour mobile et enrichissement des animations visuelles (effet CRT, scanlines)."
     }
 ]

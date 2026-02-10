@@ -42,18 +42,19 @@ function PageProject({ title, objectif, competence, resultat, amelioration, stac
                         <p>{stacks}</p>
                     </div>
                 </div>
-                <div className='project-video-container'>
-                    <video width="600" height="auto" controls autoPlay={!isMobile} muted loop>
-                        <source src={video} type="video/mp4" />
-                        <track
-                            src="/video/audio.vtt"
-                            kind="subtitles"
-                            srcLang="fr"
-                            label="Sous-titres test"
-                            default
-                        />
-                    </video>
-                </div>
+                {video && (
+                    <div className='project-video-container'>
+                        <video width="600" height="auto" controls autoPlay={!isMobile} muted loop>
+                            <source src={video} type="video/mp4" />
+                            <track
+                                src="/video/audio.vtt"
+                                kind="subtitles"
+                                srcLang="fr"
+                                default
+                            />
+                        </video>
+                    </div>
+                )}
             </main>
         </>
     )

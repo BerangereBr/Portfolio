@@ -6,6 +6,7 @@ import Projects from '../components/portolio/Projects'
 import Footer from '../components/Footer'
 import Formation from '../components/portolio/Formation'
 import Form from '../components/portolio/Form'
+import PersonalProjects from '../components/portolio/PersonalProjects'
 
 function Portfolio() {
     return (
@@ -18,9 +19,10 @@ function Portfolio() {
                 <About />
                 <Stacks />
                 <Projects />
+                < PersonalProjects />
                 <Formation />
                 <Form />
-            </main>
+            </main >
             <Footer />
         </>
     )

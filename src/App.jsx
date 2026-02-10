@@ -1,8 +1,9 @@
 import { Routes, Route, Link } from 'react-router-dom'
 import Portfolio from './pages/Portfolio'
-import JavascriptProject from './pages/JavascriptProject'
-import ReactProject from './pages/ReactProject'
-import NodejsProject from './pages/NodejsProject'
+import JavascriptProject from './pages/formationProjects/JavascriptProject'
+import ReactProject from './pages/formationProjects/ReactProject'
+import NodejsProject from './pages/formationProjects/NodejsProject'
+import SnakePage from './pages/personalProjects/snakePage'
 import Error from './components/Error'
 import { useLocation } from 'react-router-dom'
 import { useEffect } from 'react'
@@ -26,6 +27,7 @@ function App() {
         <Route path='/projet_javascript' element={<JavascriptProject />} />
         <Route path='/projet_react' element={<ReactProject />} />
         <Route path='/projet_nodejs' element={<NodejsProject />} />
+        <Route path='/projet_snake' element={<SnakePage />} />
         <Route path='*' element={<Error />} />
       </Routes>
     </>

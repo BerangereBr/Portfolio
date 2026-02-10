@@ -89,7 +89,7 @@
     button {
         height: 50px;
         border: none;
-        background-color: variables.$background-color-button;
+        background-color: variables.$color-primary-dark;
         cursor: pointer;
         color: variables.$text-primary;
         font-size: variables.$font-size-title-desk;
@@ -102,6 +102,10 @@
         @media (max-width:480px) {
             font-size: variables.$font-size-title-phone;
 
+        }
+
+        &:hover {
+            background-color: variables.$color-primary-light;
         }
     }
 }
