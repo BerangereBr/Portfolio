@@ -34,5 +34,14 @@
         "Competences": "J’ai appris à gérer des états complexes avec React, à utiliser efficacement les hooks useState et useEffect, à manipuler des timers (setInterval, setTimeout) et à structurer une logique de jeu claire. Le projet m’a aussi permis de découvrir Tailwind CSS et de créer une interface responsive avec animations et effets visuels.",
         "Resultats": "Le jeu est pleinement fonctionnel et jouable. Il intègre un système de score, une accélération progressive du snake, un écran de game over et une interface rétro immersive. Le code est structuré, lisible et maintenable.",
         "Amelioration": "Implémentation d’un système de high score avec localStorage, choix du niveau de difficulté, contrôles tactiles pour mobile et enrichissement des animations visuelles (effet CRT, scanlines)."
+    },
+    {
+        "Titre": "Calculatrice Web – React & Tailwind CSS",
+        "Contexte": "Ce projet a été réalisé dans le cadre de mon apprentissage du développement front-end avec React. L’objectif était de créer une calculatrice fonctionnelle en ligne pour consolider mes compétences en gestion d’état, validation d’input et logique applicative, tout en travaillant l’interface utilisateur et le design réactif.",
+        "Objectif": "Développer une calculatrice web capable de gérer les opérations de base (+, -, *, /), les nombres négatifs, les décimales, la suppression partielle et le reset complet. Le projet devait également inclure un support clavier et un mode clair/sombre, tout en restant responsive et ergonomique.",
+        "StackTechnique": "React, JavaScript, Tailwind CSS, Vite, CSS, Git",
+        "Competences": "J’ai appris à gérer l’état de l’application avec React et des hooks personnalisés, à valider les entrées utilisateur pour éviter les erreurs de calcul, à manipuler des chaînes et tableaux pour la logique des opérations, et à créer une interface responsive et stylisée avec Tailwind CSS.",
+        "Resultats": "La calculatrice est pleinement fonctionnelle et intuitive. Elle supporte toutes les opérations de base, la suppression de chiffres, le reset complet et l’utilisation via clavier ou boutons. L’interface est responsive, le design clair et sombre est intégré, et le code est structuré et maintenable.",
+        "Amelioration": "Ajout possible d’opérations avancées (%, racine carrée, puissance), gestion des parenthèses et priorités complexes, historique des calculs, et animations visuelles pour les interactions des boutons."
     }
 ]
