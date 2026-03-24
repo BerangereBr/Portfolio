@@ -5,6 +5,7 @@ import headerSnake from '../../assets/images/projectSnake/headerSnake.webp'
 import headerCalculatrice from '../../assets/images/projectCalculatrice/headerCalculatrice.webp'
 import internetLink from '../../assets/logo/internetLink.png'
 import '../../styles/portfolio/personalProject.scss'
+import headerTodolist from '../../assets/images/projectTodolist/headerTodolist.webp'
 
 function PersonalProjects() {
 
@@ -52,6 +53,28 @@ function PersonalProjects() {
                         </div>
                         <div className='github-div-personal'>
                             <a href='https://github.com/BerangereBr/Calculatrice.git'>
+                                <img src={github} alt='github logo'></img>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+                <article className='project'>
+                    <Link to='/projet_todolist' className='project-link'>
+                        <div className='project-link-div'><img src={headerTodolist} alt="site javascript" className='project-link-img'></img></div>
+                        <div className='project-description'>
+                            <h3>Todolist</h3>
+                            <p>Application TodoList full-stack permettant de créer et gérer plusieurs listes de tâches avec authentification utilisateur,
+                                CRUD complet et personnalisation du thème.</p>
+                        </div>
+                    </Link>
+                    <div className='container-logo'>
+                        <div className='internet-div'>
+                            <a href='https://todolist-ten-pearl-25.vercel.app/' target='_blank'>
+                                <img src={internetLink} alt='internet logo'></img>
+                            </a>
+                        </div>
+                        <div className='github-div-personal'>
+                            <a href='https://github.com/BerangereBr/Todolist'>
                                 <img src={github} alt='github logo'></img>
                             </a>
                         </div>

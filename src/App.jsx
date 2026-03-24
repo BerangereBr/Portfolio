@@ -8,6 +8,7 @@ import CalculatricePage from './pages/personalProjects/CalculatricePage'
 import Error from './components/Error'
 import { useLocation } from 'react-router-dom'
 import { useEffect } from 'react'
+import TodolistPage from './pages/personalProjects/TodolistPage'
 
 function App() {
   const { hash } = useLocation();
@@ -30,6 +31,7 @@ function App() {
         <Route path='/projet_nodejs' element={<NodejsProject />} />
         <Route path='/projet_snake' element={<SnakePage />} />
         <Route path='/projet_calculatrice' element={<CalculatricePage />} />
+        <Route path='/projet_todolist' element={<TodolistPage />} />
         <Route path='*' element={<Error />} />
       </Routes>
     </>
