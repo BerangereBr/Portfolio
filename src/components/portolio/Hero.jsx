@@ -5,6 +5,28 @@ import avatar from '../../assets/images/avatar.webp'
 import mail from '../../assets/logo/mail.png'
 
 function Hero() {
+    const links = [
+        {
+            href: "https://github.com/BerangereBr",
+            src: github,
+            alt: "logo github"
+        },
+        {
+            href: "https://www.linkedin.com/in/bérangère-brun-6208712a0",
+            src: linkedin,
+            alt: "logo linkedin"
+        },
+        {
+            href: "#form",
+            src: mail,
+            alt: "logo mail",
+            scrollTo: "form" // pour le scroll smooth
+        }
+    ];
+
+
+    const totalDelay = 2;
+
     const scrollSection = (e, id) => {
         e.preventDefault()
 
@@ -15,16 +37,48 @@ function Hero() {
             window.scrollTo({ top: y, behavior: 'smooth' })
         }
     }
+
     return (
         <section id='accueil'>
             <div className='accueil-container-avatar'>
-                <img src={avatar} alt='Bérangère Brun' width='250px'></img></div>
+                <div className='container-avatar'></div>
+                <img src={avatar} alt='Bérangère Brun' width='250px' className='avatar'></img>
+            </div>
             <div className='accueil-container-text'>
-                <h1 className='accueil-text'>Bonjour, je suis< strong className='accueil-name'>Bérangère Brun</strong>développeuse web</h1>
+                <h1 className="accueil-text">
+                    Bonjour, je suis <strong className='name'>Bérangère Brun </strong>développeuse web
+                </h1>
                 <div className=' accueil-link'>
-                    <a href='https://github.com/BerangereBr' target='_blank'><img src={github} alt='logo github' className="footer-logo" /></a>
-                    <a href='https://www.linkedin.com/in/bérangère-brun-6208712a0' target='_blank'><img src={linkedin} alt='logo linkedin' className="footer-logo" /></a>
-                    <a href="#form" onClick={(e) => scrollSection(e, 'form')}><img src={mail} alt='logo mail' className="footer-logo" /></a>
+                    {links.map((link, index) => (
+                        link.scrollTo ? (
+                            <a
+                                key={index}
+                                href={`#${link.scrollTo}`}
+                                onClick={(e) => scrollSection(e, link.scrollTo)}
+                            >
+                                <img
+                                    src={link.src}
+                                    alt={link.alt}
+                                    className="footer-logo zoom"
+                                    style={{ animationDelay: `${totalDelay + index * 0.2}s` }}
+                                />
+                            </a>
+                        ) : (
+                            <a
+                                key={index}
+                                href={link.href}
+                                target="_blank"
+                                rel="noreferrer"
+                            >
+                                <img
+                                    src={link.src}
+                                    alt={link.alt}
+                                    className="footer-logo zoom"
+                                    style={{ animationDelay: `${totalDelay + index * 0.2}s` }}
+                                />
+                            </a>
+                        )
+                    ))}
                 </div>
             </div>
         </section>

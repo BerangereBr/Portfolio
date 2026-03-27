@@ -39,13 +39,22 @@
         display: flex;
         flex-direction: row;
         justify-content: center;
-        gap: 30px;
-        width: 80%;
+        width: 100%;
+        overflow: hidden;
+        padding: 40px 0;
 
-        @media (max-width:1200px) {
+        // @media (max-width:760px) {
+        //     display: flex;
+        //     align-items: center;
+        //     flex-direction: column;
+        // }
+
+        .projects-track {
             display: flex;
-            align-items: center;
-            flex-direction: column;
+            gap: 30px;
+            width: max-content;
+
+            animation: scrollProjects 80s linear infinite;
         }
 
         .project {
@@ -54,15 +63,16 @@
             justify-content: space-between;
             cursor: pointer;
             transition: transform 0.3s ease;
-            width: 30%;
             border-radius: 20px;
             border: 2px solid variables.$color-shadow;
             background: variables.$background-color;
+            margin-right: 30px;
+            min-width: 350px;
 
-            @media (max-width:1200px) {
-                align-items: center;
-                width: 80%;
-            }
+            // @media (max-width:760px) {
+            //     align-items: center;
+            //     width: 80%;
+            // }
 
             .project-link {
                 text-decoration: none;
@@ -115,6 +125,11 @@
                 }
             }
 
+            .container-logo {
+                display: grid;
+                grid-template-columns: 80% 20%;
+            }
+
             .github-div {
                 display: flex;
                 align-items: center;
@@ -142,6 +157,34 @@
                     transition: transform 0.3s ease;
                 }
             }
+
+            .internet-div {
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                width: 100%;
+
+                a {
+                    text-decoration: none;
+                    color: variables.$color-primary-dark;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-right: 20px;
+                    margin-bottom: 20px;
+                    border-radius: 8px;
+
+                    img {
+                        width: 40px;
+                        height: 40px;
+                    }
+                }
+
+                a:hover {
+                    background-color: variables.$color-primary-light;
+                    transition: transform 0.3s ease;
+                }
+            }
         }
 
         .project:hover {
@@ -150,4 +193,14 @@
         }
     }
 
+}
+
+@keyframes scrollProjects {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
 }

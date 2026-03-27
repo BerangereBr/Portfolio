@@ -1,8 +1,9 @@
 import '../../styles/portfolio/about.scss'
+import Section from '../Section'
 
 function About() {
     return (
-        <section id='about' className='about'>
+        <Section id='about' className='about'>
             <div className='about-container'>
                 <h2 className="about-title">À propos</h2>
                 <div className='about-paragraphe'>
@@ -27,7 +28,7 @@ function About() {
                     <li>Esprit d'équipe</li>
                 </ul>
             </div>
-        </section>
+        </Section>
     )
 }
 

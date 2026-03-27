@@ -5,10 +5,11 @@ import html5 from '../../assets/logo/html5.png'
 import nodejs from '../../assets/logo/nodejs.png'
 import sass from '../../assets/logo/sass.png'
 import mongoDB from '../../assets/logo/mongoDB.png'
+import Section from '../Section'
 
 function Stacks() {
     return (
-        <section id='stacks'>
+        <Section id='stacks'>
             <article className="stack-container">
                 <div className='stack-logo'>
                     <img src={html5} alt='logo html5' />
@@ -19,7 +20,7 @@ function Stacks() {
                     <img src={mongoDB} alt='logo mongoDB' />
                 </div>
             </article>
-        </section >
+        </Section >
     )
 }
 

@@ -2,11 +2,10 @@ import About from '../components/portolio/About'
 import Hero from '../components/portolio/Hero'
 import Navbar from '../components/portolio/Navbar'
 import Stacks from '../components/portolio/Stacks'
-import Projects from '../components/portolio/Projects'
+import ProjectsWheel from '../components/portolio/ProjectsWheel'
 import Footer from '../components/Footer'
 import Formation from '../components/portolio/Formation'
 import Form from '../components/portolio/Form'
-import PersonalProjects from '../components/portolio/PersonalProjects'
 
 function Portfolio() {
     return (
@@ -18,8 +17,7 @@ function Portfolio() {
             <main>
                 <About />
                 <Stacks />
-                <Projects />
-                <PersonalProjects />
+                <ProjectsWheel />
                 <Formation />
                 <Form />
             </main >

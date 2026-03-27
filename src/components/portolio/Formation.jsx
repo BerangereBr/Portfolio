@@ -1,8 +1,9 @@
 import '../../styles/portfolio/formation.scss'
+import Section from '../Section'
 
 function Formation() {
     return (
-        <section id='formation'>
+        <Section id='formation'>
             <div className='formation-container'>
                 <h2>Parcours</h2>
                 <ul className="formation-list">
@@ -31,7 +32,7 @@ function Formation() {
                     Télécharger mon CV
                 </a>
             </div>
-        </section>
+        </Section>
     )
 }
 export default Formation

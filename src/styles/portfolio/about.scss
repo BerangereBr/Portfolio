@@ -21,6 +21,7 @@
         width: 80%;
         box-shadow: 0px 7px 29px 0px variables.$color-shadow;
         border-radius: 20px;
+        animation: text 1s forwards;
 
         .about-title {
             display: flex;

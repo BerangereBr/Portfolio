@@ -1,5 +1,7 @@
 import { useForm, ValidationError } from '@formspree/react';
-import '../../styles/portfolio/form.scss'
+import '../../styles/portfolio/form.scss';
+import Section from '../Section'
+
 function ContactForm() {
     const [state, handleSubmit] = useForm("xblzqzzd");
     if (state.succeeded) {
@@ -47,10 +49,10 @@ function ContactForm() {
 
 function Form() {
     return (
-        <section id='form'>
+        <Section id='form'>
             <h2>Contact</h2>
             <ContactForm />
-        </section>
+        </Section>
     );
 }
 
