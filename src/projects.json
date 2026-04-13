@@ -1,56 +1,86 @@
 [
     {
+        "id": 1,
         "Titre": "Site vitrine pour une architecte – JavaScript",
         "Contexte": "Dans le cadre de ma formation de développeuse web, j’ai développé le site vitrine de Sophie Bluel, une architecte d’intérieur, à partir d’une maquette Figma. Ce projet avait pour but d’ajouter de l’interactivité via JavaScript tout en respectant une architecture de code claire.",
         "Objectif": "L’enjeu était de rendre le site dynamique : filtrer les projets par catégorie, gérer l’affichage des éléments via le DOM, et créer une modale d’upload sécurisée pour les administrateurs connectés. Une attention particulière a été portée à la clarté du code et à la gestion des événements.",
         "StackTechnique": "HTML5, CSS3, JavaScript vanilla (DOM, événements, appels API), Fetch API, gestion des erreurs côté client.",
         "Competences": "J’ai renforcé mes compétences en manipulation du DOM, en gestion d’événements, et en appels asynchrones via Fetch. J’ai aussi appris à structurer mon code JS pour qu’il soit modulaire, maintenable et compréhensible.",
         "Resultats": "Le site est interactif, entièrement fonctionnel et conforme aux exigences de la maquette. L’interface d’administration permet d’ajouter ou de supprimer des projets via une API, avec des retours visuels clairs pour l’utilisateur.",
-        "Amelioration": "Une refactorisation en composants JavaScript ou l’intégration d’un framework léger pourrait améliorer la scalabilité."
+        "Amelioration": "Une refactorisation en composants JavaScript ou l’intégration d’un framework léger pourrait améliorer la scalabilité.",
+        "link": "/projet_javascript",
+        "image": "headerJavascript",
+        "githubLink": "https://github.com/BerangereBr/Projet3_Architecte_Sophie_Bluel.git",
+        "internetLink": null
     },
     {
+        "id": 2,
         "Titre": "Application de location d’hébergements – React",
         "Contexte": "Ce projet a été réalisé dans le cadre de ma formation de développeuse web. L’objectif était de recréer l’application Kasa, une plateforme de location de logements entre particuliers, à partir de maquettes Figma, tout en découvrant les bases de React.",
         "Objectif": "Créer une application front-end en React en respectant les bonnes pratiques de développement : découpage en composants, routage avec React Router, gestion des props et accessibilité. Le site devait être responsive, fluide et conforme à la maquette.",
         "StackTechnique": "React, React Router, JavaScript ES6, HTML5, CSS3 (Flexbox, Media Queries).",
         "Competences": "J’ai appris à structurer une application React en composants réutilisables, à implémenter une navigation dynamique avec React Router, et à manipuler des données JSON pour alimenter dynamiquement l’interface. Le travail sur la responsivité et l’accessibilité a également été renforcé.",
         "Resultats": "L’application est entièrement fonctionnelle, responsive, et conforme à la maquette. L’expérience utilisateur est fluide, et le code est propre, structuré et facile à maintenir. Ce projet a permis de consolider mes bases en développement front-end avec React.",
-        "Amelioration": "Intégrer un système de gestion d’état (comme Redux ou Context API) serait pertinent pour des projets plus complexes."
+        "Amelioration": "Intégrer un système de gestion d’état (comme Redux ou Context API) serait pertinent pour des projets plus complexes.",
+        "link": "/projet_react",
+        "image": "headerReact",
+        "githubLink": "https://github.com/BerangereBr/Projet5_Kasa.git",
+        "internetLink": null
     },
     {
+        "id": 3,
         "Titre": "Back-end d’une bibliothèque de livres – Node.js & Express",
         "Contexte": "Ce projet a été réalisé dans le cadre de mon apprentissage du développement back-end. Il s’agissait de créer une API sécurisée pour un site de notation de livres, Mon Vieux Grimoire, en utilisant Node.js et une base de données MongoDB.",
         "Objectif": "Développer une API REST permettant la création, la modification, la suppression et la notation de livres par les utilisateurs. L’enjeu était aussi d'assurer la sécurité des données, la protection des accès et la bonne gestion des fichiers image.",
         "StackTechnique": "Node.js, Express, MongoDB, Mongoose, dotenv (gestion des variables d’environnement), Helmet (sécurité des en-têtes HTTP), Multer (upload d’images), Git.",
         "Competences": "J’ai appris à concevoir une architecture API REST complète, à sécuriser les routes et les données utilisateurs, à gérer l’authentification via tokens, et à manipuler des fichiers avec Multer. Le projet m’a également initié aux bonnes pratiques de sécurité web.",
         "Resultats": "L’API est pleinement fonctionnelle, respecte les spécifications du cahier des charges et passe les tests de validation. Les données sont sécurisées, les requêtes optimisées et la gestion des erreurs est correctement implémentée.",
-        "Amelioration": "La mise en place de tests automatisés (Jest, Supertest). Une future version pourrait inclure une pagination des résultats et une gestion avancée des rôles utilisateurs."
+        "Amelioration": "La mise en place de tests automatisés (Jest, Supertest). Une future version pourrait inclure une pagination des résultats et une gestion avancée des rôles utilisateurs.",
+        "link": "/projet_nodejs",
+        "image": "headerNodejs",
+        "githubLink": "https://github.com/BerangereBr/Projet6_MonVieuxGrimoire.git",
+        "internetLink": null
     },
     {
+        "id": 4,
         "Titre": "Jeu Snake rétro – React & Tailwind CSS",
         "Contexte": "Ce projet a été réalisé dans le cadre de mon apprentissage du développement front-end avec React. L’objectif était de reproduire le jeu Snake en version web, afin de consolider mes bases en JavaScript, en gestion d’état React et en logique applicative, tout en travaillant l’interface utilisateur.",
         "Objectif": "Développer un jeu Snake entièrement fonctionnel avec gestion des déplacements, des collisions, du score et de la vitesse. Le projet devait également inclure un démarrage contrôlé par l’utilisateur, un compte à rebours et une interface rétro soignée.",
         "StackTechnique": "React, JavaScript, Tailwind CSS, Vite, CSS, Git",
         "Competences": "J’ai appris à gérer des états complexes avec React, à utiliser efficacement les hooks useState et useEffect, à manipuler des timers (setInterval, setTimeout) et à structurer une logique de jeu claire. Le projet m’a aussi permis de découvrir Tailwind CSS et de créer une interface responsive avec animations et effets visuels.",
         "Resultats": "Le jeu est pleinement fonctionnel et jouable. Il intègre un système de score, une accélération progressive du snake, un écran de game over et une interface rétro immersive. Le code est structuré, lisible et maintenable.",
-        "Amelioration": "Implémentation d’un système de high score avec localStorage, choix du niveau de difficulté, contrôles tactiles pour mobile et enrichissement des animations visuelles (effet CRT, scanlines)."
+        "Amelioration": "Implémentation d’un système de high score avec localStorage, choix du niveau de difficulté, contrôles tactiles pour mobile et enrichissement des animations visuelles (effet CRT, scanlines).",
+        "link": "/projet_snake",
+        "image": "headerSnake",
+        "githubLink": "https://github.com/BerangereBr/Snake",
+        "internetLink": "https://snake-rho-roan.vercel.app/"
     },
     {
+        "id": 5,
         "Titre": "Calculatrice Web – React & Tailwind CSS",
         "Contexte": "Ce projet a été réalisé dans le cadre de mon apprentissage du développement front-end avec React. L’objectif était de créer une calculatrice fonctionnelle en ligne pour consolider mes compétences en gestion d’état, validation d’input et logique applicative, tout en travaillant l’interface utilisateur et le design réactif.",
         "Objectif": "Développer une calculatrice web capable de gérer les opérations de base (+, -, *, /), les nombres négatifs, les décimales, la suppression partielle et le reset complet. Le projet devait également inclure un support clavier et un mode clair/sombre, tout en restant responsive et ergonomique.",
         "StackTechnique": "React, JavaScript, Tailwind CSS, Vite, CSS, Git",
         "Competences": "J’ai appris à gérer l’état de l’application avec React et des hooks personnalisés, à valider les entrées utilisateur pour éviter les erreurs de calcul, à manipuler des chaînes et tableaux pour la logique des opérations, et à créer une interface responsive et stylisée avec Tailwind CSS.",
         "Resultats": "La calculatrice est pleinement fonctionnelle et intuitive. Elle supporte toutes les opérations de base, la suppression de chiffres, le reset complet et l’utilisation via clavier ou boutons. L’interface est responsive, le design clair et sombre est intégré, et le code est structuré et maintenable.",
-        "Amelioration": "Ajout possible d’opérations avancées (%, racine carrée, puissance), gestion des parenthèses et priorités complexes, historique des calculs, et animations visuelles pour les interactions des boutons."
+        "Amelioration": "Ajout possible d’opérations avancées (%, racine carrée, puissance), gestion des parenthèses et priorités complexes, historique des calculs, et animations visuelles pour les interactions des boutons.",
+        "link": "/projet_calculatrice",
+        "image": "headerCalculatrice",
+        "githubLink": "https://github.com/BerangereBr/Calculatrice.git",
+        "internetLink": "https://calculatrice-kappa.vercel.app/"
     },
     {
+        "id": 6,
         "Titre": "Application TodoList – React, Sass, Vite & Supabase",
         "Contexte": "Ce projet a été réalisé dans le cadre de mon apprentissage du développement full-stack avec React. L’objectif était de concevoir une application de gestion de tâches complète permettant aux utilisateurs de créer plusieurs listes de tâches et d’organiser leurs activités. Le projet m’a permis de travailler à la fois sur le front-end, la gestion d’état, l’authentification et la communication avec une base de données.",
         "Objectif": "Développer une application TodoList permettant à un utilisateur authentifié de créer, modifier et supprimer plusieurs listes de tâches, chacune contenant plusieurs todos. L’application devait inclure une authentification sécurisée via JWT, un système CRUD complet, la gestion de thèmes personnalisés (couleurs de l’interface), une interface responsive et la possibilité de se déconnecter.",
         "StackTechnique": "React, JavaScript, Sass (SCSS), Vite, Supabase, JWT (JSON Web Token), CSS, Git",
         "Competences": "J’ai appris à concevoir une architecture front-end structurée avec React, à gérer l’état de l’application et les interactions utilisateur, à implémenter un CRUD complet connecté à une base de données Supabase, et à mettre en place un système d’authentification avec JWT. J’ai également travaillé sur la gestion dynamique des thèmes, la création de composants réutilisables, et l’intégration d’un design responsive avec Sass.",
         "Resultats": "L’application permet aux utilisateurs de créer plusieurs listes de tâches, d’ajouter, modifier et supprimer des todos dans chaque liste, et de gérer leur compte via une authentification sécurisée. L’interface est intuitive, responsive et propose plusieurs thèmes de couleurs (bleu, orange, etc.). Les données sont stockées et synchronisées avec Supabase, et le code est structuré pour être maintenable et évolutif.",
-        "Amelioration": "Des améliorations possibles incluent l’ajout de priorités ou catégories pour les tâches, un système de drag-and-drop pour réorganiser les todos, des notifications ou rappels, un partage de listes entre utilisateurs, ainsi qu’un historique des tâches complétées."
+        "Amelioration": "Des améliorations possibles incluent l’ajout de priorités ou catégories pour les tâches, un système de drag-and-drop pour réorganiser les todos, des notifications ou rappels, un partage de listes entre utilisateurs, ainsi qu’un historique des tâches complétées.",
+        "link": "/projet_todolist",
+        "image": "headerTodoList",
+        "githubLink": "https://github.com/BerangereBr/Projet7_TodoList",
+        "internetLink": "https://todolist-ten-pearl-25.vercel.app/"
     }
 ]
