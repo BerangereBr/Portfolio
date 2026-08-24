@@ -1,4 +1,4 @@
-import { Routes, Route, Link } from 'react-router-dom'
+import { Routes, Route } from 'react-router-dom'
 import Portfolio from './pages/Portfolio'
 import JavascriptProject from './pages/formationProjects/JavascriptProject'
 import ReactProject from './pages/formationProjects/ReactProject'

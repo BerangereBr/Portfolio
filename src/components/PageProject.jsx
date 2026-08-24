@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import arrow from '../assets/logo/arrow.png'
 
 function PageProject({ title, objectif, competence, resultat, amelioration, stacks, banner, video }) {
-    const isMobile = innerWidth < 768
+    const isMobile = window.innerWidth < 768
     return (
         <>
             <header className='project-header'>
@@ -12,7 +12,7 @@ function PageProject({ title, objectif, competence, resultat, amelioration, stac
                 </div>
                 <div className='project-banner'>
                     <div className='project-banner-div'>
-                        <img src={banner} alt={`projet ${title}`} className='banner-picture' fetchPriority="high" width='700px' height='500px'></img>
+                        <img src={banner} alt={`projet ${title}`} className='banner-picture' fetchPriority="high" width='700' height='500'></img>
                     </div>
                 </div>
                 <div className='project-header-title'>
@@ -34,7 +34,7 @@ function PageProject({ title, objectif, competence, resultat, amelioration, stac
                         <p>{resultat}</p>
                     </div>
                     <div>
-                        <h2>Perspéctive d'amélioration</h2>
+                        <h2>Perspective d'amélioration</h2>
                         <p>{amelioration}</p>
                     </div>
                     <div>
@@ -44,7 +44,7 @@ function PageProject({ title, objectif, competence, resultat, amelioration, stac
                 </div>
                 {video && (
                     <div className='project-video-container'>
-                        <video width="600" height="auto" controls autoPlay={!isMobile} muted loop>
+                        <video width="600" controls autoPlay={!isMobile} muted loop playsInline>
                             <source src={video} type="video/mp4" />
                             <track
                                 src="/video/audio.vtt"
